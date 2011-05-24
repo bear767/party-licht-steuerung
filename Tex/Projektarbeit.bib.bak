@@ -1,0 +1,27 @@
+% This file was created with JabRef 2.6.
+% Encoding: UTF8
+
+@BOOK{labview-buch01,
+  title = {LabVIEW -- Programmiersprache der vierten Generation},
+  publisher = {Prentice Hall},
+  year = {1997},
+  author = {Rahmal Jamal},
+  howpublished = {\url{http://totalprotection.red24.de/pdf/WP_SRM_Die%20Bek%E4mpfung%20von%20Botnets.pdf}},
+  owner = {Hua},
+  timestamp = {2010.11.13}
+}
+
+@MISC{internet,
+  note = {Zugriff am 13.11.2010 um 16:46 in Datei \textit{"`doc.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.04.12}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

@@ -1,0 +1,150 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{geometry}
+\geometry{a4paper,left=25mm,right=20mm, top=25mm, bottom=25mm}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} %utf8 latin1
+\usepackage{helvet}
+\usefont{T1}{phv}{m}{n}
+\renewcommand{\encodingdefault}{T1}
+\renewcommand{\rmdefault}{phv}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage[nottoc,notbib]{tocbibind}
+\usepackage[english,ngerman]{babel}
+\usepackage{bibgerm}
+\usepackage[numbers,square]{natbib}
+\usepackage{url}
+\usepackage[intoc]{nomencl}
+\usepackage{listings}
+\usepackage{picins}
+\usepackage{color}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage[]{titletoc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsfonts}
+
+\setlength{\parindent}{0pt}
+
+% Hyperlinks
+\usepackage{hyperref} % mu� als letztes Paket aufgef�hrt werden!
+\hypersetup{citebordercolor=1 1 1,menubordercolor=1 1 1,linkbordercolor=1 1 1,urlbordercolor=1 1 1}
+
+% Titel der Arbeit
+\def\mytitle{Party Licht Steuerung -- Programmentwurf für Lichttechniker mit LabView}
+
+% Art der Arbeit
+% [Bachelorarbeit|Studienarbeit|Projektarbeit|Praxisarbeit|...]
+\def\myKindOfReport{Studienarbeit}
+
+% Ihr Name
+\def\myname{Tim Berger} 
+
+% Abgabedatum
+\def\mydate{17. Juni 2011}
+
+% Bearbeitungszeitraum in Wochen
+\def\bearbeitungszeitraum{6. Theoriephase}
+
+% Ihre Matrikelnummer
+\def\matrikel{115435}
+
+% Ihre Ausbildungsfirma
+\def\firma{Kurtz Holding GmbH \& Co. Beteiligungs KG}
+
+% Betreuer der Ausbildungsfirma
+\def\betreuer{Dipl.-Ing. (FH) Dirk Schlosser}
+
+% Gutachter des Pr�fungsausschusses
+\def\gutachter{Prof. Dr. Wolfgang Funk}
+
+% Seitennumerierung, Kopf- und Fu�zeile
+	\fancyhead{} % clear all fields
+	\fancyfoot{} % clear all fields
+	\fancyhead[R]{\sl\leftmark}
+	\cfoot{\thepage}
+
+%\renewcommand{\familydefault}{\sfdefault}
+
+%Wenn die Gliederungsebenen nicht ausreichen =)
+\titlecontents{subsubsubsection}[9em]{}{\contentslabel{3.9em}}%
+{\hspace*{-1.2em}}{\titlerule*[0.675pc]{.}\contentspage}
+ 
+\makeatletter
+\newcounter{subsubsubsection}[subsubsection]
+\setcounter{subsubsubsection}{1}
+\setcounter{secnumdepth}{4} 
+\setcounter{tocdepth}{5} 
+\renewcommand{\thesubsubsubsection}{\thesubsubsection.\@arabic\c@subsubsubsection}
+ 
+\titleclass{\subsubsubsection}{straight}[\subsubsection]
+\titleformat{\subsubsubsection}{\bf}{\thetitle}{1em}{}[]						
+\titlespacing{\subsubsubsection}{0pt}{3.25ex plus 1ex minus 0.2ex}{1.5ex plus 0.2ex}
+
+%-------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\pagenumbering{Alph} %damit die titel seite nicht die seitenzahl 1 hat
+
+%Fussnoten mit Halbklammer: 1)
+\makeatletter
+\renewcommand*\thefootnote{\@arabic{\c@footnote})}
+\makeatother
+\sloppy
+
+
+\include{Deckblatt}
+\input{Kurzzusammenfassung}
+\input{Abstract}
+
+\newpage
+
+\renewcommand{\baselinestretch}{1.40}\normalsize
+\pagenumbering{Roman} % r�mische Numerierung z.B. f�r Inhaltsverzeichnis
+%\renewcommand\contentsname{Inhaltsverzeichnis}
+\tableofcontents
+%\renewcommand{\refname}{Literaturverzeichnis}
+\newpage
+%\renewcommand{\figurename}{Abbildung}
+%\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\listoffigures
+\newpage
+%\lstlistoflistings
+%\newpage
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\makenomenclature
+\printnomenclature
+
+
+
+%\nomenclature[prefix]{symbol}{description}
+\nomenclature{\textbf{NI}}{National Instruments}
+\nomenclature{\textbf{ }}{ }
+\nomenclature{\textbf{ }}{ }
+\nomenclature{\textbf{ }}{ }
+
+
+
+
+
+
+%\renewcommand{\listtablename}{bla}
+%\listoftables
+\newpage
+\pagestyle{fancy}
+\pagenumbering{arabic} % arabische Numerierung z.B. f�r Inhaltsverzeichnis
+
+
+\include{Einleitung}
+\input{Hauptteil}
+\include{Literatur}
+\include{Anhang}
+\include{Erklaerung}
+\end{document}

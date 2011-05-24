@@ -1,0 +1,11 @@
+\begin{thebibliography}{Jam97}
+
+\bibitem[int]{internet}
+Zugriff am 13.11.2010 um 16:46 in Datei \textit{"`doc.pdf"'}.
+
+\bibitem[Jam97]{labview-buch01}
+{\sc Jamal, Rahmal}: {\em LabVIEW -- Programmiersprache der vierten
+  Generation}.
+\newblock Prentice Hall, 1997.
+
+\end{thebibliography}
