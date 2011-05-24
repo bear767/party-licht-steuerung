@@ -1,0 +1,9 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{\textbf{ }}]\begingroup  \nomeqref {0}\nompageref{III}
+  \item [{\textbf{NI}}]\begingroup National Instruments\nomeqref {0}
+		\nompageref{III}
+
+\end{thenomenclature}
