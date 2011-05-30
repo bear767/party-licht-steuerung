@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  12 APR 2011 19:24
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  30 MAY 2011 23:19
 entering extended mode
 **Projektarbeit.tex
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -685,12 +685,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \c@subsubsubsection=\count145
 
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.aux
-(D:\DHBW_Sem6\Studienarbeit\Tex\Deckblatt.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Einleitung.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Literatur.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Anhang.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Erklaerung.aux))
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.aux
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Deckblatt.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Einleitung.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Anhang.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
@@ -774,11 +774,11 @@ LaTeX Info: Redefining \ref on input line 92.
 LaTeX Info: Redefining \pageref on input line 92.
 LaTeX Info: Redefining \nameref on input line 92.
 
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.out)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.out)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.out)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.out)
 \@outlinefile=\write3
 
-(D:\DHBW_Sem6\Studienarbeit\Tex\Deckblatt.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Deckblatt.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -812,10 +812,10 @@ LaTeX Info: Redefining \nameref on input line 92.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<Pics/DHBW.png, id=79, 177.66376pt x 87.32625pt>
+<Pics/DHBW.png, id=143, 177.66376pt x 87.32625pt>
 File: Pics/DHBW.png Graphic file (type png)
  <use Pics/DHBW.png>
-<Pics/Kurtz.png, id=80, 117.43875pt x 102.3825pt>
+<Pics/Kurtz.png, id=144, 117.43875pt x 102.3825pt>
 File: Pics/Kurtz.png Graphic file (type png)
  <use Pics/Kurtz.png>
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
@@ -824,23 +824,26 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 16.
- [1
+
+[1
 
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/DHBW_Sem6/Studienarbei
-t/Tex/Pics/DHBW.png (PNG copy)> <D:/DHBW_Sem6/Studienarbeit/Tex/Pics/Kurtz.png 
-(PNG copy)>]) (D:\DHBW_Sem6\Studienarbeit\Tex\Kurzzusammenfassung.tex)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Abstract.tex)pdfTeX warning (ext4): destination
- with the same identifier (name{page.A}) has been already used, duplicate ignor
-ed
+t/party-licht-steuerung/Tex/Pics/DHBW.png (PNG copy)> <D:/DHBW_Sem6/Studienarbe
+it/party-licht-steuerung/Tex/Pics/Kurtz.png (PNG copy)>])
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Kurzzusammenfassung.tex)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Abstract.tex)pdfTeX warni
+ng (ext4): destination with the same identifier (name{page.A}) has been already
+ used, duplicate ignored
 <to be read again> 
                    \relax 
 l.107 \newpage
                [1
 
 
-] (D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.toc
+]
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -850,19 +853,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-))
+) [1])
 \tf@toc=\write4
- [1]
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.lof)
-\tf@lof=\write5
  [2]
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.lof)
+\tf@lof=\write5
+
+[3]
 \@nomenclaturefile=\write6
 
 Writing nomenclature file Projektarbeit.nlo
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.nls) [3]
-(D:\DHBW_Sem6\Studienarbeit\Tex\Einleitung.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.nls)
+[4] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Einleitung.tex
 File: Pics/Kurtz.png Graphic file (type png)
- <use Pics/Kurtz.png>)
+
+<use Pics/Kurtz.png>)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -871,59 +876,63 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] (D:\DHBW_Sem6\Studienarbeit\Tex\Hauptteil.tex) [2
+] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Hauptteil.tex)
+[2
 
 ]
-(D:\DHBW_Sem6\Studienarbeit\Tex\Literatur.tex
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.bbl
+Overfull \vbox (218.98528pt too high) has occurred while \output is active []
+
+
+[3] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 4.
-)) [3
+))
+[4
 
-]
-(D:\DHBW_Sem6\Studienarbeit\Tex\Anhang.tex
-(D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.lot)
+] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Anhang.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.lot)
 \tf@lot=\write7
- [4
+
+[5
 
 
-]) [5]
-(D:\DHBW_Sem6\Studienarbeit\Tex\Erklaerung.tex
+]) [6] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-) [6
+) [7
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
- (D:\DHBW_Sem6\Studienarbeit\Tex\Projektarbeit.aux
-(D:\DHBW_Sem6\Studienarbeit\Tex\Deckblatt.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Einleitung.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Literatur.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Anhang.aux)
-(D:\DHBW_Sem6\Studienarbeit\Tex\Erklaerung.aux))
+ (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.aux
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Deckblatt.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Einleitung.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Anhang.aux)
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package rerunfilecheck Info: File `Projektarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 4314AB51E414CE018FE08FA45C7BDC69;1210.
+(rerunfilecheck)             Checksum: 62A5CB796C8CBC2B3FB7FD844656D38A;2233.
  ) 
 Here is how much of TeX's memory you used:
- 9540 strings out of 494019
- 133446 string characters out of 3146504
- 231757 words of memory out of 3000000
- 12545 multiletter control sequences out of 15000+200000
+ 9578 strings out of 494019
+ 135243 string characters out of 3146504
+ 233757 words of memory out of 3000000
+ 12565 multiletter control sequences out of 15000+200000
  31785 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,11n,43p,326b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,11n,43p,326b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /helvetic/uhvro8a.pfb>
-Output written on Projektarbeit.pdf (11 pages, 71768 bytes).
+Output written on Projektarbeit.pdf (13 pages, 83708 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
