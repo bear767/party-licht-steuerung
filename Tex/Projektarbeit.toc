@@ -21,16 +21,23 @@
 \contentsline {section}{\numberline {6}Code Implementierung}{3}{section.6}
 \contentsline {subsection}{\numberline {6.1}Auswahl des Design Pattern}{3}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Timing}{3}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Datei Ein- und Ausgabe}{3}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Fehlerbehandlung}{3}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.3}Auswahl der Datentypen}{3}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Init und Shutdown Funktion}{3}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Aufnahme-Funktion}{3}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Abspiel-Funktion}{3}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Stopp-Funktion}{3}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Speichern und Lade Funktion}{3}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Fehlerbehandlung}{3}{subsection.6.9}
 \contentsline {section}{\numberline {7}Testen}{3}{section.7}
 \contentsline {section}{\numberline {8}Anwendung}{3}{section.8}
 \contentsline {subsection}{\numberline {8.1}Stand-Alone Applikation}{3}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Installer}{3}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Webservice}{3}{subsection.8.3}
 \contentsline {section}{\numberline {9}Abschlie\IeC {\ss }ende Betrachtung}{3}{section.9}
-\contentsline {section}{Literaturverzeichnis}{4}{section.9}
-\contentsline {section}{Anhang}{5}{section.9}
+\contentsline {subsection}{\numberline {9.1}Update }{3}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Information Hidding}{3}{subsection.9.2}
+\contentsline {section}{Literaturverzeichnis}{4}{subsection.9.2}
+\contentsline {section}{Anhang}{5}{subsection.9.2}
 \contentsline {subsection}{\numberline {A.1}Text}{6}{subsection.A.1}
 \contentsline {subsection}{\numberline {A.2}Text}{6}{subsection.A.2}
 \contentsline {subsection}{\numberline {A.3}Text}{6}{subsection.A.3}

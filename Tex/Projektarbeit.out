@@ -19,18 +19,25 @@
 \BOOKMARK [1][-]{section.6}{Code Implementierung}{}% 19
 \BOOKMARK [2][-]{subsection.6.1}{Auswahl des Design Pattern}{section.6}% 20
 \BOOKMARK [2][-]{subsection.6.2}{Timing}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.3}{Datei Ein- und Ausgabe}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.4}{Fehlerbehandlung}{section.6}% 23
-\BOOKMARK [1][-]{section.7}{Testen}{}% 24
-\BOOKMARK [1][-]{section.8}{Anwendung}{}% 25
-\BOOKMARK [2][-]{subsection.8.1}{Stand-Alone Applikation}{section.8}% 26
-\BOOKMARK [2][-]{subsection.8.2}{Installer}{section.8}% 27
-\BOOKMARK [2][-]{subsection.8.3}{Webservice}{section.8}% 28
-\BOOKMARK [1][-]{section.9}{Abschlie\337ende Betrachtung}{}% 29
-\BOOKMARK [1][-]{section.9}{Literaturverzeichnis}{}% 30
-\BOOKMARK [1][-]{section.9}{Anhang}{}% 31
-\BOOKMARK [2][-]{subsection.A.1}{Text}{section.9}% 32
-\BOOKMARK [2][-]{subsection.A.2}{Text}{section.9}% 33
-\BOOKMARK [2][-]{subsection.A.3}{Text}{section.9}% 34
-\BOOKMARK [2][-]{subsection.A.4}{Text}{section.9}% 35
-\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 36
+\BOOKMARK [2][-]{subsection.6.3}{Auswahl der Datentypen}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.4}{Init und Shutdown Funktion}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.5}{Aufnahme-Funktion}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.6}{Abspiel-Funktion}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.7}{Stopp-Funktion}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.8}{Speichern und Lade Funktion}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.9}{Fehlerbehandlung}{section.6}% 28
+\BOOKMARK [1][-]{section.7}{Testen}{}% 29
+\BOOKMARK [1][-]{section.8}{Anwendung}{}% 30
+\BOOKMARK [2][-]{subsection.8.1}{Stand-Alone Applikation}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.2}{Installer}{section.8}% 32
+\BOOKMARK [2][-]{subsection.8.3}{Webservice}{section.8}% 33
+\BOOKMARK [1][-]{section.9}{Abschlie\337ende Betrachtung}{}% 34
+\BOOKMARK [2][-]{subsection.9.1}{Update }{section.9}% 35
+\BOOKMARK [2][-]{subsection.9.2}{Information Hidding}{section.9}% 36
+\BOOKMARK [1][-]{subsection.9.2}{Literaturverzeichnis}{}% 37
+\BOOKMARK [1][-]{subsection.9.2}{Anhang}{}% 38
+\BOOKMARK [2][-]{subsection.A.1}{Text}{subsection.9.2}% 39
+\BOOKMARK [2][-]{subsection.A.2}{Text}{subsection.9.2}% 40
+\BOOKMARK [2][-]{subsection.A.3}{Text}{subsection.9.2}% 41
+\BOOKMARK [2][-]{subsection.A.4}{Text}{subsection.9.2}% 42
+\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 43
