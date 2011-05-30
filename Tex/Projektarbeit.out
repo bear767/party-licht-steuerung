@@ -4,17 +4,33 @@
 \BOOKMARK [2][-]{subsection.1.1}{Motivation und Zielsetzung}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.2}{Aufbau der Arbeit}{section.1}% 5
 \BOOKMARK [1][-]{section.2}{LabVIEW als Programmiersprache}{}% 6
-\BOOKMARK [1][-]{section.3}{Implementierung des Projekts}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Grafische Oberfl\344che}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Projekt Design}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Test Plan}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.4}{Dokumentation}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.5}{Stand-Alone Applikation}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Abschlie\337ende Betrachtung}{}% 13
-\BOOKMARK [1][-]{section.4}{Literaturverzeichnis}{}% 14
-\BOOKMARK [1][-]{section.4}{Anhang}{}% 15
-\BOOKMARK [2][-]{subsection.A.1}{Text}{section.4}% 16
-\BOOKMARK [2][-]{subsection.A.2}{Text}{section.4}% 17
-\BOOKMARK [2][-]{subsection.A.3}{Text}{section.4}% 18
-\BOOKMARK [2][-]{subsection.A.4}{Text}{section.4}% 19
-\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 20
+\BOOKMARK [2][-]{subsection.2.1}{Objektorientiertes Design}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Programm Analyse}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Programmablaufplan}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Ablaufdiagramm }{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Datenfluss Diagramm}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Entwurfsmuster - Design Pattern}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Master/Slave}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Zustandsautomat}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Erzeuger Verbraucher Design}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Event Handling}{subsection.4.3}% 16
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Error Handling}{subsection.4.3}% 17
+\BOOKMARK [1][-]{section.5}{User Interface}{}% 18
+\BOOKMARK [1][-]{section.6}{Code Implementierung}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Auswahl des Design Pattern}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.2}{Timing}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Datei Ein- und Ausgabe}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.4}{Fehlerbehandlung}{section.6}% 23
+\BOOKMARK [1][-]{section.7}{Testen}{}% 24
+\BOOKMARK [1][-]{section.8}{Anwendung}{}% 25
+\BOOKMARK [2][-]{subsection.8.1}{Stand-Alone Applikation}{section.8}% 26
+\BOOKMARK [2][-]{subsection.8.2}{Installer}{section.8}% 27
+\BOOKMARK [2][-]{subsection.8.3}{Webservice}{section.8}% 28
+\BOOKMARK [1][-]{section.9}{Abschlie\337ende Betrachtung}{}% 29
+\BOOKMARK [1][-]{section.9}{Literaturverzeichnis}{}% 30
+\BOOKMARK [1][-]{section.9}{Anhang}{}% 31
+\BOOKMARK [2][-]{subsection.A.1}{Text}{section.9}% 32
+\BOOKMARK [2][-]{subsection.A.2}{Text}{section.9}% 33
+\BOOKMARK [2][-]{subsection.A.3}{Text}{section.9}% 34
+\BOOKMARK [2][-]{subsection.A.4}{Text}{section.9}% 35
+\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 36

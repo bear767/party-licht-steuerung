@@ -1,23 +1,39 @@
 \select@language {ngerman}
 \select@language {ngerman}
-\contentsline {section}{Abbildungsverzeichnis}{II}{Doc-Start}
-\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{III}{Doc-Start}
+\contentsline {section}{Abbildungsverzeichnis}{III}{Doc-Start}
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{IV}{Doc-Start}
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Motivation und Zielsetzung}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Aufbau der Arbeit}{1}{subsection.1.2}
-\contentsline {section}{\numberline {2}LabVIEW als Programmiersprache}{2}{section.2}
-\contentsline {section}{\numberline {3}Implementierung des Projekts}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}Grafische Oberfl\IeC {\"a}che}{2}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Projekt Design}{2}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Test Plan}{2}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Dokumentation}{2}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Stand-Alone Applikation}{2}{subsection.3.5}
-\contentsline {section}{\numberline {4}Abschlie\IeC {\ss }ende Betrachtung}{2}{section.4}
-\contentsline {section}{Literaturverzeichnis}{3}{section.4}
-\contentsline {section}{Anhang}{4}{section.4}
-\contentsline {subsection}{\numberline {A.1}Text}{5}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Text}{5}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Text}{5}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Text}{5}{subsection.A.4}
-\contentsline {section}{Erkl\IeC {\"a}rung}{6}{subsection.A.4}
+\contentsline {section}{\numberline {2}LabVIEW als Programmiersprache}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Objektorientiertes Design}{3}{subsection.2.1}
+\contentsline {section}{\numberline {3}Programm Analyse}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Programmablaufplan}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ablaufdiagramm }{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Datenfluss Diagramm}{3}{subsection.3.3}
+\contentsline {section}{\numberline {4}Entwurfsmuster - Design Pattern}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}Master/Slave}{3}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Zustandsautomat}{3}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Erzeuger Verbraucher Design}{3}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Event Handling}{3}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Error Handling}{3}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}User Interface}{3}{section.5}
+\contentsline {section}{\numberline {6}Code Implementierung}{3}{section.6}
+\contentsline {subsection}{\numberline {6.1}Auswahl des Design Pattern}{3}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Timing}{3}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Datei Ein- und Ausgabe}{3}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Fehlerbehandlung}{3}{subsection.6.4}
+\contentsline {section}{\numberline {7}Testen}{3}{section.7}
+\contentsline {section}{\numberline {8}Anwendung}{3}{section.8}
+\contentsline {subsection}{\numberline {8.1}Stand-Alone Applikation}{3}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Installer}{3}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Webservice}{3}{subsection.8.3}
+\contentsline {section}{\numberline {9}Abschlie\IeC {\ss }ende Betrachtung}{3}{section.9}
+\contentsline {section}{Literaturverzeichnis}{4}{section.9}
+\contentsline {section}{Anhang}{5}{section.9}
+\contentsline {subsection}{\numberline {A.1}Text}{6}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Text}{6}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Text}{6}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Text}{6}{subsection.A.4}
+\contentsline {section}{Erkl\IeC {\"a}rung}{7}{subsection.A.4}
 \contentsfinish 
