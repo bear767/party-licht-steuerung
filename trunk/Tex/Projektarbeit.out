@@ -6,39 +6,37 @@
 \BOOKMARK [2][-]{subsection.1.3}{Aufbau der Arbeit}{section.1}% 6
 \BOOKMARK [1][-]{section.2}{LabVIEW als Programmiersprache}{}% 7
 \BOOKMARK [2][-]{subsection.2.1}{Entwurfsmuster - Design Pattern}{section.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Master/Slave}{subsection.2.1}% 9
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Zustandsautomat}{subsection.2.1}% 10
-\BOOKMARK [3][-]{subsubsection.2.1.3}{Erzeuger Verbraucher Design}{subsection.2.1}% 11
-\BOOKMARK [4][-]{paragraph*.1}{Event Handling}{subsubsection.2.1.3}% 12
-\BOOKMARK [4][-]{paragraph*.2}{Error Handling}{subsubsection.2.1.3}% 13
-\BOOKMARK [1][-]{section.3}{Programm Analyse}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Programmablaufplan}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Ablaufdiagramm }{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Datenfluss Diagramm}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{User Interface}{}% 18
-\BOOKMARK [1][-]{section.5}{Code Implementierung}{}% 19
-\BOOKMARK [2][-]{subsection.5.1}{Auswahl des Design Pattern}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.2}{Timing}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.3}{Auswahl der Datentypen}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.4}{Init und Shutdown Funktion}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.5}{Aufnahme-Funktion}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.6}{Abspiel-Funktion}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.7}{Stopp-Funktion}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.8}{Speichern und Lade Funktion}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.9}{Fehlerbehandlung}{section.5}% 28
-\BOOKMARK [1][-]{section.6}{Testen}{}% 29
-\BOOKMARK [1][-]{section.7}{Anwendung}{}% 30
-\BOOKMARK [2][-]{subsection.7.1}{Stand-Alone Applikation}{section.7}% 31
-\BOOKMARK [2][-]{subsection.7.2}{Installer}{section.7}% 32
-\BOOKMARK [2][-]{subsection.7.3}{Webservice}{section.7}% 33
-\BOOKMARK [1][-]{section.8}{Abschlie\337ende Betrachtung}{}% 34
-\BOOKMARK [2][-]{subsection.8.1}{Update }{section.8}% 35
-\BOOKMARK [2][-]{subsection.8.2}{Information Hidding}{section.8}% 36
-\BOOKMARK [2][-]{subsection.8.3}{Erweiterungen}{section.8}% 37
-\BOOKMARK [1][-]{subsection.8.3}{Literaturverzeichnis}{}% 38
-\BOOKMARK [1][-]{subsection.8.3}{Anhang}{}% 39
-\BOOKMARK [2][-]{subsection.A.1}{Text}{subsection.8.3}% 40
-\BOOKMARK [2][-]{subsection.A.2}{Text}{subsection.8.3}% 41
-\BOOKMARK [2][-]{subsection.A.3}{Text}{subsection.8.3}% 42
-\BOOKMARK [2][-]{subsection.A.4}{Text}{subsection.8.3}% 43
-\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 44
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Zustandsautomat}{subsection.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Master/Slave-Entwurfsmuster}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Einfacher Ereignisbehandler f\374r Benutzeroberfl\344che}{subsection.2.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Erzeuger/Verbraucher-Entwurfsmuster}{subsection.2.1}% 12
+\BOOKMARK [1][-]{section.3}{Programm Analyse}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{Ablaufdiagramm }{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Datenfluss Diagramm}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{User Interface}{}% 16
+\BOOKMARK [1][-]{section.5}{Code Implementierung}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Auswahl des Design Pattern}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Timing}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Auswahl der Datentypen}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Init und Shutdown Funktion}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.5}{Aufnahme-Funktion}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.6}{Abspiel-Funktion}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.7}{Stopp-Funktion}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.8}{Speichern und Lade Funktion}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.9}{Fehlerbehandlung}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Testen}{}% 27
+\BOOKMARK [1][-]{section.7}{Anwendung}{}% 28
+\BOOKMARK [2][-]{subsection.7.1}{Stand-Alone Applikation}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.2}{Installer}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.3}{Webservice}{section.7}% 31
+\BOOKMARK [1][-]{section.8}{Abschlie\337ende Betrachtung}{}% 32
+\BOOKMARK [2][-]{subsection.8.1}{Update }{section.8}% 33
+\BOOKMARK [2][-]{subsection.8.2}{Information Hiding}{section.8}% 34
+\BOOKMARK [2][-]{subsection.8.3}{Erweiterungen}{section.8}% 35
+\BOOKMARK [1][-]{subsection.8.3}{Literaturverzeichnis}{}% 36
+\BOOKMARK [1][-]{subsection.8.3}{Anhang}{}% 37
+\BOOKMARK [2][-]{subsection.A.1}{Text}{subsection.8.3}% 38
+\BOOKMARK [2][-]{subsection.A.2}{Text}{subsection.8.3}% 39
+\BOOKMARK [2][-]{subsection.A.3}{Text}{subsection.8.3}% 40
+\BOOKMARK [2][-]{subsection.A.4}{Text}{subsection.8.3}% 41
+\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 42

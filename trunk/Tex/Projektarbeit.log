@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  2 JUN 2011 15:11
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  2 JUN 2011 18:37
 entering extended mode
 **Projektarbeit.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.tex
@@ -812,10 +812,10 @@ LaTeX Info: Redefining \nameref on input line 92.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<Pics/DHBW.png, id=175, 177.66376pt x 87.32625pt>
+<Pics/DHBW.png, id=167, 177.66376pt x 87.32625pt>
 File: Pics/DHBW.png Graphic file (type png)
  <use Pics/DHBW.png>
-<Pics/Kurtz.png, id=176, 117.43875pt x 102.3825pt>
+<Pics/Kurtz.png, id=168, 117.43875pt x 102.3825pt>
 File: Pics/Kurtz.png Graphic file (type png)
  <use Pics/Kurtz.png>
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
@@ -865,7 +865,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 Writing nomenclature file Projektarbeit.nlo
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.nls)
 [4] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Einleitung.tex
-<Pics/Oberflaeche001.png, id=250, 886.31125pt x 392.46625pt>
+<Pics/Oberflaeche001.png, id=244, 886.31125pt x 392.46625pt>
 File: Pics/Oberflaeche001.png Graphic file (type png)
 
 <use Pics/Oberflaeche001.png>)
@@ -883,17 +883,45 @@ png (PNG copy)>]
 
 Package natbib Warning: Citation `LVT' on page 3 undefined on input line 16.
 
-<Pics/demo01.png, id=264, 674.52pt x 265.99374pt>
+<Pics/demo01.png, id=258, 674.52pt x 265.99374pt>
 File: Pics/demo01.png Graphic file (type png)
  <use Pics/demo01.png>
-[3
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 36.
 
- <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/demo01.png (PNG cop
-y)>]) [4] [5]
-Overfull \vbox (213.45358pt too high) has occurred while \output is active []
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+ [3
+
+] [4 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/demo01.png (PNG
+ copy)>]
+<Pics/play-flowchart.jpeg, id=274, 730.73pt x 735.74875pt>
+File: Pics/play-flowchart.jpeg Graphic file (type jpg)
+
+<use Pics/play-flowchart.jpeg>
+Overfull \hbox (33.0947pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
 
 
-[6] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.tex
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Pics/play-dataflow.jpeg, id=276, 780.9175pt x 301.125pt>
+File: Pics/play-dataflow.jpeg Graphic file (type jpg)
+
+<use Pics/play-dataflow.jpeg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [5] [6 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-flowch
+art.jpeg>]
+Overfull \vbox (291.69751pt too high) has occurred while \output is active []
+
+
+[7 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-dataflow.jpe
+g>] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 4.
@@ -901,22 +929,22 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-))) [7
+))) [8
 
 ]
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Anhang.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.lot)
 \tf@lot=\write7
 
-[8
+[9
 
 
-]) [9] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
+]) [10] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-) [10
+) [11
 
 
 ]
@@ -933,31 +961,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package rerunfilecheck Info: File `Projektarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 72E9A66F65D4C9B5E8AD33A6BB34C3BB;2828.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: A66881588D270495DED8E8B8FC7E6B0B;2752.
  ) 
 Here is how much of TeX's memory you used:
- 9634 strings out of 494019
- 136418 string characters out of 3146504
- 234869 words of memory out of 3000000
- 12603 multiletter control sequences out of 15000+200000
+ 9660 strings out of 494019
+ 136936 string characters out of 3146504
+ 236000 words of memory out of 3000000
+ 12622 multiletter control sequences out of 15000+200000
  32098 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,11n,43p,500b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,11n,43p,500b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Hua\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
 tt1200.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helv
-etic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.p
-fb>
-Output written on Projektarbeit.pdf (16 pages, 260003 bytes).
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Projektarbeit.pdf (17 pages, 343099 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
 

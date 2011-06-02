@@ -63,6 +63,7 @@
 			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
 			<Item Name="Play Button.ctl" Type="VI" URL="../Controls/Play Button.ctl"/>
 			<Item Name="tlc_User Interface Data Type.ctl" Type="VI" URL="../Controls/tlc_User Interface Data Type.ctl"/>
+			<Item Name="PLS Main.vi" Type="VI" URL="../PLS Main.vi"/>
 		</Item>
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Images" Type="Folder">
@@ -78,7 +79,6 @@
 			</Item>
 			<Item Name="Clear Specific Error.vi" Type="VI" URL="../Shared/Clear Specific Error.vi"/>
 		</Item>
-		<Item Name="PLS Main.vi" Type="VI" URL="../PLS Main.vi"/>
 		<Item Name="tlc_Menu.rtm" Type="Document" URL="../Menu/tlc_Menu.rtm"/>
 		<Item Name="About.vi" Type="VI" URL="../About.vi"/>
 		<Item Name="tlc.ico" Type="Document" URL="../Icons/tlc.ico"/>
@@ -117,6 +117,8 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 			</Item>
 			<Item Name="Light Open.vi" Type="VI" URL="../API/Hardware/Light Open.vi"/>
 			<Item Name="Refnum Enum.ctl" Type="VI" URL="../API/Hardware/Refnum Enum.ctl"/>
@@ -150,7 +152,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{C848C1A0-2574-45EF-B93C-D53D609C84FB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PLS Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Controls/PLS Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
