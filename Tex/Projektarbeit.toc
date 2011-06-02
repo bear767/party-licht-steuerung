@@ -7,41 +7,39 @@
 \contentsline {subsection}{\numberline {1.2}Anforderungen}{1}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Aufbau der Arbeit}{1}{subsection.1.3}
 \contentsline {section}{\numberline {2}LabVIEW als Programmiersprache}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Entwurfsmuster - Design Pattern}{4}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Master/Slave}{4}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Zustandsautomat}{4}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Erzeuger Verbraucher Design}{4}{subsubsection.2.1.3}
-\contentsline {paragraph}{Event Handling}{4}{paragraph*.1}
-\contentsline {paragraph}{Error Handling}{4}{paragraph*.2}
-\contentsline {section}{\numberline {3}Programm Analyse}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Programmablaufplan}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ablaufdiagramm }{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Datenfluss Diagramm}{6}{subsection.3.3}
-\contentsline {section}{\numberline {4}User Interface}{6}{section.4}
-\contentsline {section}{\numberline {5}Code Implementierung}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}Auswahl des Design Pattern}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Timing}{6}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Auswahl der Datentypen}{6}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Init und Shutdown Funktion}{6}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Aufnahme-Funktion}{6}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Abspiel-Funktion}{6}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Stopp-Funktion}{6}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}Speichern und Lade Funktion}{6}{subsection.5.8}
-\contentsline {subsection}{\numberline {5.9}Fehlerbehandlung}{6}{subsection.5.9}
-\contentsline {section}{\numberline {6}Testen}{6}{section.6}
-\contentsline {section}{\numberline {7}Anwendung}{6}{section.7}
-\contentsline {subsection}{\numberline {7.1}Stand-Alone Applikation}{6}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Installer}{6}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Webservice}{6}{subsection.7.3}
-\contentsline {section}{\numberline {8}Abschlie\IeC {\ss }ende Betrachtung}{6}{section.8}
-\contentsline {subsection}{\numberline {8.1}Update }{6}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Information Hidding}{6}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Erweiterungen}{6}{subsection.8.3}
-\contentsline {section}{Literaturverzeichnis}{7}{subsection.8.3}
-\contentsline {section}{Anhang}{8}{subsection.8.3}
-\contentsline {subsection}{\numberline {A.1}Text}{9}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Text}{9}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Text}{9}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Text}{9}{subsection.A.4}
-\contentsline {section}{Erkl\IeC {\"a}rung}{10}{subsection.A.4}
+\contentsline {subsection}{\numberline {2.1}Entwurfsmuster - Design Pattern}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Zustandsautomat}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Master/Slave-Entwurfsmuster}{4}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Einfacher Ereignisbehandler f\IeC {\"u}r Benutzeroberfl\IeC {\"a}che}{4}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Erzeuger/Verbraucher-Entwurfsmuster}{5}{subsubsection.2.1.4}
+\contentsline {section}{\numberline {3}Programm Analyse}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ablaufdiagramm }{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Datenfluss Diagramm}{5}{subsection.3.2}
+\contentsline {section}{\numberline {4}User Interface}{7}{section.4}
+\contentsline {section}{\numberline {5}Code Implementierung}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Auswahl des Design Pattern}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Timing}{7}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Auswahl der Datentypen}{7}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Init und Shutdown Funktion}{7}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Aufnahme-Funktion}{7}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Abspiel-Funktion}{7}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Stopp-Funktion}{7}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}Speichern und Lade Funktion}{7}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}Fehlerbehandlung}{7}{subsection.5.9}
+\contentsline {section}{\numberline {6}Testen}{7}{section.6}
+\contentsline {section}{\numberline {7}Anwendung}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}Stand-Alone Applikation}{7}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Installer}{7}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Webservice}{7}{subsection.7.3}
+\contentsline {section}{\numberline {8}Abschlie\IeC {\ss }ende Betrachtung}{7}{section.8}
+\contentsline {subsection}{\numberline {8.1}Update }{7}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Information Hiding}{7}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Erweiterungen}{7}{subsection.8.3}
+\contentsline {section}{Literaturverzeichnis}{8}{subsection.8.3}
+\contentsline {section}{Anhang}{9}{subsection.8.3}
+\contentsline {subsection}{\numberline {A.1}Text}{10}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Text}{10}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Text}{10}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Text}{10}{subsection.A.4}
+\contentsline {section}{Erkl\IeC {\"a}rung}{11}{subsection.A.4}
 \contentsfinish 
