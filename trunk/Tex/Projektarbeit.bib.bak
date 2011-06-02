@@ -11,6 +11,26 @@
   timestamp = {2010.11.13}
 }
 
+@MISC{LVT,
+  author = {NI},
+  title = {Einführung in LabVIEW - Dreistündiger Einführungskurs},
+  howpublished = {\url{http://www.ni.com/pdf/academic/d/labview_3_hrs.pdf}},
+  year = {2011},
+  note = {Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`labview3hrs.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.06.02}
+}
+
+@MISC{wiki-lv,
+  author = {Wikipedia},
+  title = {LabVIEW},
+  howpublished = {\url{http://de.wikipedia.org/w/index.php?title=LabVIEW}},
+  year = {2011},
+  note = {Zugriff am 2.6.2011 um 14:03 in Datei \textit{"`wiki-labview.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.06.02}
+}
+
 @MISC{internet,
   note = {Zugriff am 13.11.2010 um 16:46 in Datei \textit{"`doc.pdf"'}},
   owner = {Hua},

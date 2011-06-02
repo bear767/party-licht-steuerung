@@ -1,11 +1,14 @@
-\begin{thebibliography}{Jam97}
+\begin{thebibliography}{NI11b}
 
-\bibitem[int]{internet}
-Zugriff am 13.11.2010 um 16:46 in Datei \textit{"`doc.pdf"'}.
+\bibitem[NI11a]{ni-tuto}
+{\sc NI}: {\em Einführung in LabVIEW - Dreistündiger Einführungskurs}.
+\newblock \url{http://www.ni.com/pdf/academic/d/labview_3_hrs.pdf}, 2011.
+\newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`labview3hrs.pdf"'}.
 
-\bibitem[Jam97]{labview-buch01}
-{\sc Jamal, Rahmal}: {\em LabVIEW -- Programmiersprache der vierten
-  Generation}.
-\newblock Prentice Hall, 1997.
+\bibitem[NI11b]{ni-compiler}
+{\sc NI}: {\em Wie funktioniert der Compiler von NI LabVIEW?}
+\newblock \url{http://zone.ni.com/devzone/cda/tut/p/id/11936}, 2011.
+\newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`Compiler LabVIEW -
+  Developer Zone - National Instruments.pdf"'}.
 
 \end{thebibliography}

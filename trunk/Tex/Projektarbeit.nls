@@ -2,8 +2,11 @@
 
  \nomgroup{A}
 
-  \item [{\textbf{ }}]\begingroup  \nomeqref {0}\nompageref{III}
+  \item [{\textbf{ }}]\begingroup  \nomeqref {0}\nompageref{IV}
+  \item [{\textbf{LabView}}]\begingroup  LV\nomeqref {0}\nompageref{IV}
+  \item [{\textbf{LJ}}]\begingroup Light Jockey (dt. Lichttechniker) \nomeqref {0}
+		\nompageref{IV}
   \item [{\textbf{NI}}]\begingroup National Instruments\nomeqref {0}
-		\nompageref{III}
+		\nompageref{IV}
 
 \end{thenomenclature}

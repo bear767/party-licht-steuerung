@@ -1,0 +1,528 @@
+<HTML>
+<HEAD>
+<TITLE>TLC Main.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="TLC Main.vi"></A><H2>TLC Main.vi</H2>
+<P>This is the main user interface for the Theatre Light Control Software.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="TLC_Mainc.png" ALT="TLC Main.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="TLC_Mainp.png" ALT="TLC Main.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Play[Play]</B> <P>Plays the recorded cues.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Record[Record]</B> <P>Records a cue.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Stop[Stop]</B> <P>Stops the application.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error. </P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Cue List[Cue List]</B> <P>Contains information about the recorded cue, and the cue number.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Cue Information</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Cue Name</B> <P>Used to identify the cue in the cue list</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>Wait Time (s)</B> <P>The period of time (in seconds) that the cue waits before changing the color and intensity of the channel array.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>Fade Time (s)</B> <P>The period of time (in seconds) that the cue spends transitioning from the current channel colors and intensities to the target colors and intensities.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>Follow Time (s)</B> <P>The period of time (in seconds) that the cue spends holding the current cue's colors and intensities before loading the next cue.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i2dnclst.png" ALT="i2dnclst"></P>
+</TD>
+<TD>
+<B>Channels</B> <P>A 2D array of channels representing the theater lighting system. Each channel consists of a channel number, an intensity (0-100) and a color.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>UI Channel</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Intensity</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B> Color</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Channel</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="TLC_Maind.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind1.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind2.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind3.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind4.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind5.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind6.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind7.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind8.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind9.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind10.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind11.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind12.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind13.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind14.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind15.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind16.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind17.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind18.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind19.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind20.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind21.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind22.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind23.png" ALT="TLC Main.vi"></P>
+<P><IMG SRC="TLC_Maind24.png" ALT="TLC Main.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Shutdowni.png" ALT="tlc_Shutdown.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Shutdown.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Shutdown.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Cue__Information_Commandctli.png" ALT="tlc_Cue_Information Command.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_Cue_Information Command.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\Cue\tlc_Cue_Information Command.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__File__Command_Controlctli.png" ALT="tlc_File_Command Control.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_File_Command Control.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\File\tlc_File_Command Control.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__User_Interface_Data_Typectli.png" ALT="tlc_User Interface Data Type.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_User Interface Data Type.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\tlc_User Interface Data Type.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Cue_Modulei.png" ALT="tlc_Cue Module.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Cue Module.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\Cue\tlc_Cue Module.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="channelctli.png" ALT="channel.ctl"></P>
+</TD>
+<TD>
+<B><P>channel.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\channel.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Cue__Informationctli.png" ALT="tlc_Cue_Information.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_Cue_Information.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\tlc_Cue_Information.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__File_Modulei.png" ALT="tlc_File Module.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_File Module.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\File\tlc_File Module.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__User_Interface_Commandctli.png" ALT="tlc_User Interface Command.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_User Interface Command.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\tlc_User Interface Command.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Stopi.png" ALT="tlc_Stop.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Stop.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Stop.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Consumer_Controlctli.png" ALT="tlc_Consumer Control.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_Consumer Control.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\tlc_Consumer Control.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Functionsctli.png" ALT="tlc_Functions.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_Functions.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Controls\tlc_Functions.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Playi.png" ALT="tlc_Play.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Play.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Play.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Loadi.png" ALT="tlc_Load.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Load.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Load.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Recordi.png" ALT="tlc_Record.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Record.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Record.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Initializei.png" ALT="tlc_Initialize.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Initialize.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Initialize.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Error_Modulei.png" ALT="tlc_Error Module.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Error Module.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\Error\tlc_Error Module.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Error_Module_Command_Controlctli.png" ALT="tlc_Error Module Command Control.ctl"></P>
+</TD>
+<TD>
+<B><P>tlc_Error Module Command Control.ctl</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Modules\Error\tlc_Error Module Command Control.ctl</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Merge_Errorsi.png" ALT="Merge Errors.vi"></P>
+</TD>
+<TD>
+<B><P>Merge Errors.vi</P>
+</B><P>C:\Program Files\National Instruments\LabVIEW 2009\vi.lib\Utility\error.llb\Merge Errors.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="TLC_Main_vi_Instance_1i.png" ALT="TLC Main.vi:Instance:1"></P>
+</TD>
+<TD>
+<B><P>File Dialog2</P>
+</B><P>File Dialog</P>
+<P>Displays a dialog box with which you can specify the path to a file or directory.</P>
+<P>--------------------</P>
+<P></P>
+<P>This Express VI is configured as follows:</P>
+<P></P>
+<P>&lt;b&gt;Selection Mode:&lt;/b&gt;</P>
+<P>Existing file</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Clear_Specific_Errori.png" ALT="Clear Specific Error.vi"></P>
+</TD>
+<TD>
+<B><P>Clear Specific Error.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Shared\Clear Specific Error.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="TLC_Main_vi_Instance_0i.png" ALT="TLC Main.vi:Instance:0"></P>
+</TD>
+<TD>
+<B><P>File Dialog</P>
+</B><P>File Dialog</P>
+<P>Displays a dialog box with which you can specify the path to a file or directory.</P>
+<P>--------------------</P>
+<P></P>
+<P>This Express VI is configured as follows:</P>
+<P></P>
+<P>&lt;b&gt;Selection Mode:&lt;/b&gt;</P>
+<P>New file</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="tlc__Record_Dialog_Boxi.png" ALT="tlc_Record Dialog Box.vi"></P>
+</TD>
+<TD>
+<B><P>tlc_Record Dialog Box.vi</P>
+</B><P>C:\Perforce\CustomerEducation\Courses\InDev\LVCore3\2009\English\SolutionSource\Exercise 9-1\Integration\tlc_Record Dialog Box.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="Simple_Error_Handleri.png" ALT="Simple Error Handler.vi"></P>
+</TD>
+<TD>
+<B><P>Simple Error Handler.vi</P>
+</B><P>C:\Program Files\National Instruments\LabVIEW 2009\vi.lib\Utility\error.llb\Simple Error Handler.vi</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;TLC Main.vi History&quot;</P>
+<P>Current Revision:   48</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="TLC_Mainh.png" ALT="TLC Main.vi"></P>
+</BODY>
+</HTML>
