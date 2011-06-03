@@ -13,30 +13,41 @@
 \BOOKMARK [1][-]{section.3}{Programm Analyse}{}% 13
 \BOOKMARK [2][-]{subsection.3.1}{Ablaufdiagramm }{section.3}% 14
 \BOOKMARK [2][-]{subsection.3.2}{Datenfluss Diagramm}{section.3}% 15
-\BOOKMARK [1][-]{section.4}{User Interface}{}% 16
-\BOOKMARK [1][-]{section.5}{Code Implementierung}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Auswahl des Design Pattern}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Timing}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.3}{Auswahl der Datentypen}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.4}{Init und Shutdown Funktion}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.5}{Aufnahme-Funktion}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.6}{Abspiel-Funktion}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.7}{Stopp-Funktion}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.8}{Speichern und Lade Funktion}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.9}{Fehlerbehandlung}{section.5}% 26
-\BOOKMARK [1][-]{section.6}{Testen}{}% 27
-\BOOKMARK [1][-]{section.7}{Anwendung}{}% 28
-\BOOKMARK [2][-]{subsection.7.1}{Stand-Alone Applikation}{section.7}% 29
-\BOOKMARK [2][-]{subsection.7.2}{Installer}{section.7}% 30
-\BOOKMARK [2][-]{subsection.7.3}{Webservice}{section.7}% 31
-\BOOKMARK [1][-]{section.8}{Abschlie\337ende Betrachtung}{}% 32
-\BOOKMARK [2][-]{subsection.8.1}{Update }{section.8}% 33
-\BOOKMARK [2][-]{subsection.8.2}{Information Hiding}{section.8}% 34
-\BOOKMARK [2][-]{subsection.8.3}{Erweiterungen}{section.8}% 35
-\BOOKMARK [1][-]{subsection.8.3}{Literaturverzeichnis}{}% 36
-\BOOKMARK [1][-]{subsection.8.3}{Anhang}{}% 37
-\BOOKMARK [2][-]{subsection.A.1}{Text}{subsection.8.3}% 38
-\BOOKMARK [2][-]{subsection.A.2}{Text}{subsection.8.3}% 39
-\BOOKMARK [2][-]{subsection.A.3}{Text}{subsection.8.3}% 40
-\BOOKMARK [2][-]{subsection.A.4}{Text}{subsection.8.3}% 41
-\BOOKMARK [1][-]{subsection.A.4}{Erkl\344rung}{}% 42
+\BOOKMARK [1][-]{section.4}{Code Implementierung}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Auswahl des Design Pattern}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Init und Shutdown Funktion}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{User Interface}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Initialisierung des Front Panels}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.3}{De-/Aktivieren von Schaltfl\344chen}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Update der Set-Ablaufliste}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Update der Lichtkan\344le}{subsection.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.4}{Aufnahme-Funktion}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.5}{Abspiel-Funktion}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.6}{Stopp-Funktion}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.7}{Speichern und Lade Funktion}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.8}{Fehlerbehandlung}{section.4}% 29
+\BOOKMARK [1][-]{section.5}{Testen}{}% 30
+\BOOKMARK [1][-]{section.6}{Anwendung}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Stand-Alone Applikation}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Installer}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Webservice}{section.6}% 34
+\BOOKMARK [1][-]{section.7}{Abschlie\337ende Betrachtung}{}% 35
+\BOOKMARK [2][-]{subsection.7.1}{Multilingualit\344t}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.2}{Update }{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.3}{Information Hiding}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.4}{Erweiterungen}{section.7}% 39
+\BOOKMARK [1][-]{subsection.7.4}{Literaturverzeichnis}{}% 40
+\BOOKMARK [1][-]{subsection.7.4}{Anhang}{}% 41
+\BOOKMARK [2][-]{subsection.A.1}{Initialisierungsfunktion}{subsection.7.4}% 42
+\BOOKMARK [2][-]{subsection.A.2}{Shutdown-Funktion}{subsection.7.4}% 43
+\BOOKMARK [2][-]{subsection.A.3}{Initialisierung des Front Panels}{subsection.7.4}% 44
+\BOOKMARK [2][-]{subsection.A.4}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.7.4}% 45
+\BOOKMARK [2][-]{subsection.A.5}{De-/Aktivieren von Schaltfl\344chen}{subsection.7.4}% 46
+\BOOKMARK [2][-]{subsection.A.6}{Update der Set-Ablaufliste}{subsection.7.4}% 47
+\BOOKMARK [2][-]{subsection.A.7}{Update der Lichtkan\344le}{subsection.7.4}% 48
+\BOOKMARK [2][-]{subsection.A.8}{Text}{subsection.7.4}% 49
+\BOOKMARK [2][-]{subsection.A.9}{Text}{subsection.7.4}% 50
+\BOOKMARK [2][-]{subsection.A.10}{Text}{subsection.7.4}% 51
+\BOOKMARK [2][-]{subsection.A.11}{Text}{subsection.7.4}% 52
+\BOOKMARK [1][-]{figure.18}{Erkl\344rung}{}% 53

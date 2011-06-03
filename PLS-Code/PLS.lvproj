@@ -63,7 +63,6 @@
 			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
 			<Item Name="Play Button.ctl" Type="VI" URL="../Controls/Play Button.ctl"/>
 			<Item Name="tlc_User Interface Data Type.ctl" Type="VI" URL="../Controls/tlc_User Interface Data Type.ctl"/>
-			<Item Name="PLS Main.vi" Type="VI" URL="../PLS Main.vi"/>
 		</Item>
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Images" Type="Folder">
@@ -82,6 +81,7 @@
 		<Item Name="tlc_Menu.rtm" Type="Document" URL="../Menu/tlc_Menu.rtm"/>
 		<Item Name="About.vi" Type="VI" URL="../About.vi"/>
 		<Item Name="tlc.ico" Type="Document" URL="../Icons/tlc.ico"/>
+		<Item Name="PLS Main.vi" Type="VI" URL="../PLS Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -152,7 +152,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{C848C1A0-2574-45EF-B93C-D53D609C84FB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Controls/PLS Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PLS Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
