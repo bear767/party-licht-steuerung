@@ -15,31 +15,42 @@
 \contentsline {section}{\numberline {3}Programm Analyse}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Ablaufdiagramm }{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Datenfluss Diagramm}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}User Interface}{7}{section.4}
-\contentsline {section}{\numberline {5}Code Implementierung}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Auswahl des Design Pattern}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Timing}{7}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Auswahl der Datentypen}{7}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Init und Shutdown Funktion}{7}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Aufnahme-Funktion}{7}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Abspiel-Funktion}{7}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Stopp-Funktion}{7}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}Speichern und Lade Funktion}{7}{subsection.5.8}
-\contentsline {subsection}{\numberline {5.9}Fehlerbehandlung}{7}{subsection.5.9}
-\contentsline {section}{\numberline {6}Testen}{7}{section.6}
-\contentsline {section}{\numberline {7}Anwendung}{7}{section.7}
-\contentsline {subsection}{\numberline {7.1}Stand-Alone Applikation}{7}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Installer}{7}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Webservice}{7}{subsection.7.3}
-\contentsline {section}{\numberline {8}Abschlie\IeC {\ss }ende Betrachtung}{7}{section.8}
-\contentsline {subsection}{\numberline {8.1}Update }{7}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Information Hiding}{7}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Erweiterungen}{7}{subsection.8.3}
-\contentsline {section}{Literaturverzeichnis}{8}{subsection.8.3}
-\contentsline {section}{Anhang}{9}{subsection.8.3}
-\contentsline {subsection}{\numberline {A.1}Text}{10}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Text}{10}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Text}{10}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Text}{10}{subsection.A.4}
-\contentsline {section}{Erkl\IeC {\"a}rung}{11}{subsection.A.4}
+\contentsline {section}{\numberline {4}Code Implementierung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Auswahl des Design Pattern}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Init und Shutdown Funktion}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}User Interface}{9}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Initialisierung des Front Panels}{9}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Auswahl eines Lichtsets aus der Lichterset Queue}{10}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}De-/Aktivieren von Schaltfl\IeC {\"a}chen}{10}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Update der Set-Ablaufliste}{10}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Update der Lichtkan\IeC {\"a}le}{10}{subsubsection.4.3.5}
+\contentsline {subsection}{\numberline {4.4}Aufnahme-Funktion}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Abspiel-Funktion}{12}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Stopp-Funktion}{13}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Speichern und Lade Funktion}{13}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Fehlerbehandlung}{13}{subsection.4.8}
+\contentsline {section}{\numberline {5}Testen}{13}{section.5}
+\contentsline {section}{\numberline {6}Anwendung}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Stand-Alone Applikation}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Installer}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Webservice}{13}{subsection.6.3}
+\contentsline {section}{\numberline {7}Abschlie\IeC {\ss }ende Betrachtung}{13}{section.7}
+\contentsline {subsection}{\numberline {7.1}Multilingualit\IeC {\"a}t}{13}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Update }{13}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Information Hiding}{13}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Erweiterungen}{13}{subsection.7.4}
+\contentsline {section}{Literaturverzeichnis}{14}{subsection.7.4}
+\contentsline {section}{Anhang}{15}{subsection.7.4}
+\contentsline {subsection}{\numberline {A.1}Initialisierungsfunktion}{16}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Shutdown-Funktion}{17}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Initialisierung des Front Panels}{17}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Auswahl eines Lichtsets aus der Lichterset Queue}{17}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}De-/Aktivieren von Schaltfl\IeC {\"a}chen}{18}{subsection.A.5}
+\contentsline {subsection}{\numberline {A.6}Update der Set-Ablaufliste}{18}{subsection.A.6}
+\contentsline {subsection}{\numberline {A.7}Update der Lichtkan\IeC {\"a}le}{18}{subsection.A.7}
+\contentsline {subsection}{\numberline {A.8}Text}{19}{subsection.A.8}
+\contentsline {subsection}{\numberline {A.9}Text}{19}{subsection.A.9}
+\contentsline {subsection}{\numberline {A.10}Text}{19}{subsection.A.10}
+\contentsline {subsection}{\numberline {A.11}Text}{19}{subsection.A.11}
+\contentsline {section}{Erkl\IeC {\"a}rung}{21}{figure.18}
 \contentsfinish 

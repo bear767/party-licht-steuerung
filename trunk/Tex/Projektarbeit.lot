@@ -1,7 +1,14 @@
 \select@language {ngerman}
 \select@language {ngerman}
-\contentsline {section}{A.1 Text}{10}{subsection.A.1}
-\contentsline {section}{A.2 Text}{10}{subsection.A.2}
-\contentsline {section}{A.3 Text}{10}{subsection.A.3}
-\contentsline {section}{A.4 Text}{10}{subsection.A.4}
+\contentsline {section}{A.1 Initialisierungsfunktion}{16}{subsection.A.1}
+\contentsline {section}{A.2 Shutdown-Funktion}{17}{subsection.A.2}
+\contentsline {section}{A.3 Initialisierung des Front Panels}{17}{subsection.A.3}
+\contentsline {section}{A.4 Auswahl eines Lichtsets aus der Lichterset Queue}{17}{subsection.A.4}
+\contentsline {section}{A.5 De-/Aktivieren von Schaltfl\IeC {\"a}chen}{18}{subsection.A.5}
+\contentsline {section}{A.6 Update der Set-Ablaufliste}{18}{subsection.A.6}
+\contentsline {section}{A.7 Update der Lichtkan\IeC {\"a}le}{18}{subsection.A.7}
+\contentsline {section}{A.8 Text}{19}{subsection.A.8}
+\contentsline {section}{A.9 Text}{19}{subsection.A.9}
+\contentsline {section}{A.10 Text}{19}{subsection.A.10}
+\contentsline {section}{A.11 Text}{19}{subsection.A.11}
 \contentsfinish 

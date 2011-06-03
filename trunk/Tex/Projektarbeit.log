@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  2 JUN 2011 18:37
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  3 JUN 2011 18:46
 entering extended mode
 **Projektarbeit.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.tex
@@ -812,10 +812,10 @@ LaTeX Info: Redefining \nameref on input line 92.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<Pics/DHBW.png, id=167, 177.66376pt x 87.32625pt>
+<Pics/DHBW.png, id=212, 177.66376pt x 87.32625pt>
 File: Pics/DHBW.png Graphic file (type png)
  <use Pics/DHBW.png>
-<Pics/Kurtz.png, id=168, 117.43875pt x 102.3825pt>
+<Pics/Kurtz.png, id=213, 117.43875pt x 102.3825pt>
 File: Pics/Kurtz.png Graphic file (type png)
  <use Pics/Kurtz.png>
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
@@ -865,7 +865,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 Writing nomenclature file Projektarbeit.nlo
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.nls)
 [4] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Einleitung.tex
-<Pics/Oberflaeche001.png, id=244, 886.31125pt x 392.46625pt>
+<Pics/Oberflaeche001.png, id=327, 886.31125pt x 392.46625pt>
 File: Pics/Oberflaeche001.png Graphic file (type png)
 
 <use Pics/Oberflaeche001.png>)
@@ -883,68 +883,129 @@ png (PNG copy)>]
 
 Package natbib Warning: Citation `LVT' on page 3 undefined on input line 16.
 
-<Pics/demo01.png, id=258, 674.52pt x 265.99374pt>
+<Pics/demo01.png, id=341, 674.52pt x 265.99374pt>
 File: Pics/demo01.png Graphic file (type png)
  <use Pics/demo01.png>
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
  [3
 
 ] [4 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/demo01.png (PNG
  copy)>]
-<Pics/play-flowchart.jpeg, id=274, 730.73pt x 735.74875pt>
+<Pics/play-flowchart.jpeg, id=358, 670.505pt x 968.61874pt>
 File: Pics/play-flowchart.jpeg Graphic file (type jpg)
 
 <use Pics/play-flowchart.jpeg>
-Overfull \hbox (33.0947pt too wide) in paragraph at lines 69--70
- [][] 
- []
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pics/play-dataflow.jpeg, id=276, 780.9175pt x 301.125pt>
+<Pics/play-dataflow.jpeg, id=360, 780.9175pt x 301.125pt>
 File: Pics/play-dataflow.jpeg Graphic file (type jpg)
 
 <use Pics/play-dataflow.jpeg>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [5] [6 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-flowch
-art.jpeg>]
-Overfull \vbox (291.69751pt too high) has occurred while \output is active []
+[5]
 
+LaTeX Warning: Text page 6 contains only floats.
 
-[7 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-dataflow.jpe
-g>] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.tex
-(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.bbl
+[6 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-flowchart.jp
+eg>] [7 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/play-dataflo
+w.jpeg>] <Pics/ueberblick003.png, id=376, 895.345pt x 485.815pt>
+File: Pics/ueberblick003.png Graphic file (type png)
+
+<use Pics/ueberblick003.png>
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 4.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
+ [8 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/ueberblick003.pn
+g>]
+<Pics/front-stop.png, id=386, 601.24625pt x 240.9pt>
+File: Pics/front-stop.png Graphic file (type png)
+ <use Pics/front-stop.png>
+[9 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/front-stop.png (P
+NG copy)>] [10] <Pics/record.png, id=401, 595.22375pt x 514.92375pt>
+File: Pics/record.png Graphic file (type png)
+
+<use Pics/record.png> [11 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex
+/Pics/record.png (PNG copy)>]) [12] [13]
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Literatur.tex
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-))) [8
+))) [14
 
 ]
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Anhang.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.lot)
 \tf@lot=\write7
 
-[9
+[15
 
 
-]) [10] (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
+] <Pics/init.png, id=441, 1019.81pt x 338.26375pt>
+File: Pics/init.png Graphic file (type png)
+ <use Pics/init.png>
+[16 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/init.png (PNG co
+py)>] <Pics/shutdown.png, id=446, 622.325pt x 107.40125pt>
+File: Pics/shutdown.png Graphic file (type png)
+
+<use Pics/shutdown.png>
+<Pics/init-front.png, id=447, 761.84625pt x 266.9975pt>
+File: Pics/init-front.png Graphic file (type png)
+
+<use Pics/init-front.png>
+<Pics/front-auswahl.png, id=448, 166.6225pt x 73.27374pt>
+File: Pics/front-auswahl.png Graphic file (type png)
+
+<use Pics/front-auswahl.png>
+<Pics/front-deaktivieren.png, id=449, 232.87pt x 104.39pt>
+File: Pics/front-deaktivieren.png Graphic file (type png)
+
+<use Pics/front-deaktivieren.png> [17 <D:/DHBW_Sem6/Studienarbeit/party-licht-s
+teuerung/Tex/Pics/shutdown.png (PNG copy)> <D:/DHBW_Sem6/Studienarbeit/party-li
+cht-steuerung/Tex/Pics/init-front.png (PNG copy)> <D:/DHBW_Sem6/Studienarbeit/p
+arty-licht-steuerung/Tex/Pics/front-auswahl.png (PNG copy)>]
+<Pics/front-updateCue.png, id=454, 301.125pt x 147.55125pt>
+File: Pics/front-updateCue.png Graphic file (type png)
+
+<use Pics/front-updateCue.png>
+<Pics/front-kanale.png, id=455, 601.24625pt x 240.9pt>
+File: Pics/front-kanale.png Graphic file (type png)
+
+<use Pics/front-kanale.png>
+File: Pics/front-kanale.png Graphic file (type png)
+ <use Pics/front-kanale.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Pics/front-kanale.png Graphic file (type png)
+<use Pics/front-kanale.png> [18 <D:/DHBW_Sem6/Studienarbeit/party-licht-steueru
+ng/Tex/Pics/front-deaktivieren.png (PNG copy)> <D:/DHBW_Sem6/Studienarbeit/part
+y-licht-steuerung/Tex/Pics/front-updateCue.png (PNG copy)> <D:/DHBW_Sem6/Studie
+narbeit/party-licht-steuerung/Tex/Pics/front-kanale.png (PNG copy)>]
+File: Pics/front-kanale.png Graphic file (type png)
+
+<use Pics/front-kanale.png>
+File: Pics/front-kanale.png Graphic file (type png)
+ <use Pics/front-kanale.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [19] [20]
+(D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-) [11
+) [21
 
 
 ]
@@ -961,16 +1022,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package rerunfilecheck Info: File `Projektarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: A66881588D270495DED8E8B8FC7E6B0B;2752.
+(rerunfilecheck)             Checksum: 7AB2F81C6D28BD1DC936670C530E0441;3773.
  ) 
 Here is how much of TeX's memory you used:
- 9660 strings out of 494019
- 136936 string characters out of 3146504
- 236000 words of memory out of 3000000
- 12622 multiletter control sequences out of 15000+200000
+ 9774 strings out of 494019
+ 138836 string characters out of 3146504
+ 236819 words of memory out of 3000000
+ 12691 multiletter control sequences out of 15000+200000
  32098 words of font info for 48 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,11n,43p,500b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,12n,43p,575b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Hua\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
 tt1200.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
@@ -979,9 +1040,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Projektarbeit.pdf (17 pages, 343099 bytes).
+Output written on Projektarbeit.pdf (27 pages, 586338 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 505 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -29,6 +29,7 @@ Des Weiteren findet die Berechnung in einer While-Schleife statt. Die Abbruchbed
 
 	%\subsection{Objektorientiertes Design}  %2-15
 	\subsection{Entwurfsmuster - Design Pattern}
+	\label{chap:entwurfsmuster}
 Zur Entwicklung einer umfangreichen Applikation ist es unerlässlich mit Entwurfsmustern zu arbeiten. Sie helfen nicht nur dem Entwickler den Überblick nicht zu verlieren sondern machen es auch für Außenstehende einfacher den Code zu lesen und modifizieren.
 
 LabView bietet neun verschiedene Entwurfsmuster. Für welches man sich entscheidet hängt von folgenden Kriterien ab:
@@ -39,7 +40,7 @@ LabView bietet neun verschiedene Entwurfsmuster. Für welches man sich entscheid
 	\item Gibt es parallele Operationen?
 \end{itemize}
 
-Im folgenden gehe ich auf einige Entwurfsmuster ein, die für meine Problemstellung infrage kommen könnten. Das sind: der Zustandsautomat, Master/Slave-Entwurfsmuster, Ereignisbehandler für Benutzeroberfläche und das Erzeuger/Verbraucher-Entwurfsmuster. Später im XXX Kapitel, nach der Programmanalyse, werde ich auf meine Wahl des Entwurfsmuster eingehen.
+Im folgenden gehe ich auf einige Entwurfsmuster ein, die für meine Problemstellung infrage kommen könnten. Das sind: der Zustandsautomat, Master/Slave-Entwurfsmuster, Ereignisbehandler für Benutzeroberfläche und das Erzeuger/Verbraucher-Entwurfsmuster. Später im \ref{chap:designpattern} Kapitel werde ich auf meine Wahl des Entwurfsmuster eingehen.
 
 \subsubsection{Zustandsautomat}%4-6
 Mit jedem Zustand wird ein bestimmter Blockdiagramm Ausschnitt ausgeführt und ermittelt, zu welchem Zustand weitergesprungen wird. In einer While-Schleife wird eine Case-Struktur ausgeführt. 
@@ -66,13 +67,13 @@ So kann man durch die parallele Ausführung der Schleifen Leistungssteigerung de
 Mit Ablaufdiagrammen wird der Programmfluss illustriert. Mit deren Hilfe kann man eine Aufgabe in handhabbare Funktionen teilen. Abbildung \ref{fig:plan01} zeigt das Ablauf Diagramm für die Abspiel-Funktion in der Party-Licht-Steuerung. Ein Knoten repräsentiert eine Funktion.
 	\begin{figure}[h!]
 	\centering
-		\includegraphics[height=0.72\textheight]{Pics/play-flowchart.jpeg}
+		\includegraphics[height=0.9\textheight]{Pics/play-flowchart.jpeg}
 	\caption{Ablaufdiagramm für die Abspiel-Funktion}
 	\label{fig:plan01}
 	\end{figure}	
 		
 \subsection{Datenfluss Diagramm}
-Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch eine Applikation nehmen. Abbildung \ref{fig:plan02} zeigt das Datenfluss Diagramm für die Abspiel-Funktion in der Party-Licht-Steuerung. Die Knoten (Kreise) repräsentieren die Prozesse. Eine externe Entität ist das Licht Kontroll-System.  Die Pfeile zeigen den Datenfluss.
+Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch eine Applikation nehmen. Abbildung \ref{fig:plan02} zeigt das Datenfluss Diagramm für die Abspiel-Funktion in der Party-Licht-Steuerung. Die Knoten (Kreise) repräsentieren die Prozesse. Eine externe Entität ist das Licht Kontroll-System. Die Pfeile zeigen die Richtung des Datenflusses an.
 	\begin{figure}[h!]
 	\centering
 		\includegraphics[width=\textwidth]{Pics/play-dataflow.jpeg}
@@ -80,19 +81,139 @@ Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch ei
 	\label{fig:plan02}
 	\end{figure}	
 		
-\section{User Interface}
+%\section{User Interface}
 
 \section{Code Implementierung}
 		\subsection{Auswahl des Design Pattern} %6-3
+		\label{chap:designpattern}
 		%4-18
-		\subsection{Timing}
-		\subsection{Auswahl der Datentypen}
+		Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher Design  (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden. Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und den auszuführenden Code gut trennen. 
 
-		\subsection{Init und Shutdown Funktion}	%E 7-1
-		\subsection{Aufnahme-Funktion}	
-		\subsection{Abspiel-Funktion}
+Das Entwurfsmuster wird wie folgend abgewandelt implementiert. Die Erzeuger Schleife reagiert auf Events vom User-Interface. Diese sind die drei Schaltflächen: Abspielen, Aufnehmen und Stoppen sowie die Menüauswahl: Speichern, Laden und Beenden.
+
+Über eine Verbraucher-Queue tauscht die Erzeugerschleife Kommandos und Daten mit der Verbraucherschleife aus. Hier sind folgende Kommandos implementiert:
+\begin{itemize}
+\item initialisieren
+\item aufnehmen
+\item abspielen
+\item stoppen
+\item laden
+\item speichern und
+\item beenden
+\end{itemize}
+Daten die die Erzeuger- an die Verbraucherschleife sendet sind Lampen-Sets die beim aufnehmen, speichern oder laden entstehen. In der Verbraucherschleife werden alle Berechnungen durchgeführt. Diese Schleife kommuniziert über eine Display-Queue mit der Displayschleife.
+
+Sie hat die Aufgabe Änderungen am User-Interface durchzuführen. Diese können sein:
+\begin{itemize}
+\item Initialisierung des Front Panels
+\item Update der Lichtkanäle
+\item Auswahl eines Lichtsets
+\item De-/Aktivieren von Schaltflächen
+\item Update der Set-Ablaufliste und
+\item Stopp
+\end{itemize}
+
+Abbildung \ref{fig:schleifen} zeigt die Struktur aus dem Blockdiagramm. 
+Die Funktionen der Applikation sind in drei separate Schleifen aufgeteilt, der Vorteil dieser Architektur ist, das die Funktionalität der einzelnen Prozesse parallel ausgeführt werden kann. Des Weiteren ist diese Art der Architektur wartungsfreundlicher und besser skalierbar. 
+
+%Auf die Implementierung der einzelnen Funktionen wird in den folgenden Abschnitten eingegangen.
+
+	\begin{figure}%[h!]
+	\centering
+		\includegraphics[width=0.9\textwidth]{Pics/ueberblick003.png}
+	\caption{Design Struktur für das Blockdiagramm}
+	\label{fig:schleifen}
+	\end{figure}
+ 		
+
+		
+		
+		%\subsection{Timing}
+		%\subsection{Auswahl der Datentypen}
+
+\subsection{Init und Shutdown Funktion}	%E 7-1
+Die Initialisierungsfunktion wird beim Start der Anwendung ausgeführt. Die setzt alle Module in einen definierten, sicheren Zustand und säubert das User-Interface. Abbildung \ref{fig:a1} im Anhang zeigt das Blockdiagramm vom \textit{"`init.vi"'}.
+
+Wenn der Benutzer im Menü auf Datei$\rightarrow$Beenden klickt wird die Anwendung sicher heruntergefahren, dass heißt es werden alle Speicher-Referenzen freigegeben. Abbildung \ref{fig:a2} im Anhang zeigt das Blockdiagramm vom \textit{"`shutdown.vi"'}.
+
+\subsection{User Interface}
+Die Display-Schleife sorgt für Updates auf dem User Interface.  Abbildung \ref{fig:disp} zeigt diese mit dem Stopp Case. Zu beginn wird ein Element aus der Display Queue genommen und dann nach Typ und Daten aufgeschlüsselt. Anhand des Datentyps, das die sie von der Verbraucherschleife erhalten wird der entsprechende Case aufgerufen. Bei dem Kommando Stopp wird die While-Schleife beendet. Sollte ein Fehler in einem Case aufgetreten sein, wird es vom \textit{"`Error Module.vi"'} behandelt.
+
+	\begin{figure}[h!]
+	\centering
+		\includegraphics[width=\textwidth]{Pics/front-stop.png}
+	\caption{Display Schleife}
+	\label{fig:disp}
+	\end{figure}
+
+%Sie hat hat eine Case-Struktur mit den folgenden Funktionen.
+
+\subsubsection{Initialisierung des Front Panels}
+Dieser Case erstellt ein 2D-Array von Lichtkanälen und stellt es auf dem Front Panel dar. Jeder Kanal bekommt eine Nummer. Die Farbe wird auf schwarz und die Intensität auf 0 gesetzt. 
+
+Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a3}.
+
+\subsubsection{Auswahl eines Lichtsets aus der Lichterset Queue}
+In diesem Case wird eine Spalte in Ablaufkontrolle hervorgehoben. Entweder wenn der User darauf klickt oder wenn die Applikation über die Queue von Lichtersets iteriert. 
+
+Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a4}.
+ 
+\subsubsection{De-/Aktivieren von Schaltflächen}
+Wenn eine Lichterset Queue abgespielt wird, schaltet dieser Case die Schaltfläche Aufnehmen und die Ablaufkontrollliste inaktiv. 
+
+Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a5}.
+
+\subsubsection{Update der Set-Ablaufliste}
+Dieser Case aktualisiert die Liste in der Ablaufkontrolle immer wenn ein neues Lichterset aufgenommen wurde.
+
+Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a6}.
+
+\subsubsection{Update der Lichtkanäle}
+Dieser Case updatet das 2D-Array aus Lichtkanälen. Es wird immer dann aufgerufen, wenn sich Lichtkanal Daten ändern. Das ist der Fall wenn eine Lichterset Queue abgespielt wird und sich die Farbe und Intensität der Kanäle ändert oder der Nutzer auf ein Element in der Ablaufkontolle klickt um sich Informationen zum ausgewählten Lichterset anzuzeigen.
+
+Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a7}.
+
+
+\subsection{Aufnahme-Funktion}	
+Klickt der Anwender auf die Aufnahme Schaltfläche öffnet sich eine Dialogbox in der er nach Parametern für das zu erstellende Lichterset gefragt wird. Die einzugebenden Werte sind:
+\begin{itemize}
+\item Setname
+\item Wartezeit
+\item Überblendungszeit
+\item Nachlaufzeit und
+\item Einstellungen für die einzelnen Lichtkanäle
+\end{itemize}
+
+Nach Bestätigung über die OK-Schaltfläche werden die gesammelten Daten in die Queue geschrieben und das User-Interface geupdated. 
+
+Die Abbildung \ref{fig:rec} zeigt die Erzeuger-(oben) und Verbraucherschleife(unten). In der Erzeugerschleife wird die Dialogbox geöffnet. Sie gibt ein Objekt mit den gesammelten Daten zurück. Wurde der Dialog nicht abgebrochen werden die Daten zusammen mit dem Kommando "`record"' in die Verbraucher Queue gesteckt. Die Verbraucherschleife nimmt sich das Objekt aus der Queue und hängt das neue Objekt an die Lichterset-Liste an. Dann gibt sie das Kommando zum updaten des User-Interface an die Display-Schleife.
+
+	\begin{figure}[h!]
+	\centering
+		\includegraphics[width=\textwidth]{Pics/record.png}
+	\caption{Aufnahme-Funktion}
+	\label{fig:rec}
+	\end{figure}
+
+
+\subsection{Abspiel-Funktion}
+Die Abspiel-Funktion wird als Zustandsautomat implementiert. Das Flussdiagramm aus Abbildung \ref{fig:plan01} zeigt die einzelnen Zustände. 
+
+Empfängt die Verbraucherschleife das Kommando zum Abspielen öffnet sie das \textit{"`record.vi"'}. Das VI durchläuft ein Zustand. Gibt es zurück, das der Zustandsautomat noch nicht bis zum Ende durchgelaufen ist, steckt die Verbraucherschleife erneut das Kommando play in die Verbraucher Queue. Daraus resultiert eine Schleife die solange läuft, bis der Abspielvorgang beendet ist.
+Zur Berechnung, ob die verschieden Zeiten abgelaufen sind wird das  \textit{"`timing.vi"'} aufgerufen.
+
+\subsubsection{Timing}
+Zur akkuraten Berechnung der Warte-, Überblendungs- und Nachlaufzeit dient das Timing VI. In diesem wird über die Funktion "`Datum/Zeit in Sekunden ermitteln "' die seit dem Start verstrichene Zeit ermittelt. Abbildung \ref{fig:a8} im Anhang zeigt den Codeausschnitt mit dem überprüft wird, ob eine Zielzeit schon erreicht wurde. Dieses VI arbeitet als Funktionale-Globale-Variable.
+
+% http://www.fu-net.de/lv/lv02/lv_tut02_v04_062.jpg
+
+		
+		
 		\subsection{Stopp-Funktion}
+		
+		
 		\subsection{Speichern und Lade Funktion}
+		
 			
 		\subsection{Fehlerbehandlung}
 
@@ -104,6 +225,7 @@ Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch ei
 	\subsection{Webservice}
 
 \section{Abschließende Betrachtung}
+	\subsection{Multilingualität}
 	\subsection{Update }%E8-2
 	\subsection{Information Hiding} %E4-5
 	\subsection{Erweiterungen}
