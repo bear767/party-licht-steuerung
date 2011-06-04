@@ -13,41 +13,50 @@
 \BOOKMARK [1][-]{section.3}{Programm Analyse}{}% 13
 \BOOKMARK [2][-]{subsection.3.1}{Ablaufdiagramm }{section.3}% 14
 \BOOKMARK [2][-]{subsection.3.2}{Datenfluss Diagramm}{section.3}% 15
-\BOOKMARK [1][-]{section.4}{Code Implementierung}{}% 16
-\BOOKMARK [2][-]{subsection.4.1}{Auswahl des Design Pattern}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.2}{Init und Shutdown Funktion}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.3}{User Interface}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Initialisierung des Front Panels}{subsection.4.3}% 20
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.4.3}% 21
-\BOOKMARK [3][-]{subsubsection.4.3.3}{De-/Aktivieren von Schaltfl\344chen}{subsection.4.3}% 22
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Update der Set-Ablaufliste}{subsection.4.3}% 23
-\BOOKMARK [3][-]{subsubsection.4.3.5}{Update der Lichtkan\344le}{subsection.4.3}% 24
-\BOOKMARK [2][-]{subsection.4.4}{Aufnahme-Funktion}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.5}{Abspiel-Funktion}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.6}{Stopp-Funktion}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.7}{Speichern und Lade Funktion}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.8}{Fehlerbehandlung}{section.4}% 29
-\BOOKMARK [1][-]{section.5}{Testen}{}% 30
-\BOOKMARK [1][-]{section.6}{Anwendung}{}% 31
-\BOOKMARK [2][-]{subsection.6.1}{Stand-Alone Applikation}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.2}{Installer}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.3}{Webservice}{section.6}% 34
-\BOOKMARK [1][-]{section.7}{Abschlie\337ende Betrachtung}{}% 35
-\BOOKMARK [2][-]{subsection.7.1}{Multilingualit\344t}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.2}{Update }{section.7}% 37
-\BOOKMARK [2][-]{subsection.7.3}{Information Hiding}{section.7}% 38
-\BOOKMARK [2][-]{subsection.7.4}{Erweiterungen}{section.7}% 39
-\BOOKMARK [1][-]{subsection.7.4}{Literaturverzeichnis}{}% 40
-\BOOKMARK [1][-]{subsection.7.4}{Anhang}{}% 41
-\BOOKMARK [2][-]{subsection.A.1}{Initialisierungsfunktion}{subsection.7.4}% 42
-\BOOKMARK [2][-]{subsection.A.2}{Shutdown-Funktion}{subsection.7.4}% 43
-\BOOKMARK [2][-]{subsection.A.3}{Initialisierung des Front Panels}{subsection.7.4}% 44
-\BOOKMARK [2][-]{subsection.A.4}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.7.4}% 45
-\BOOKMARK [2][-]{subsection.A.5}{De-/Aktivieren von Schaltfl\344chen}{subsection.7.4}% 46
-\BOOKMARK [2][-]{subsection.A.6}{Update der Set-Ablaufliste}{subsection.7.4}% 47
-\BOOKMARK [2][-]{subsection.A.7}{Update der Lichtkan\344le}{subsection.7.4}% 48
-\BOOKMARK [2][-]{subsection.A.8}{Text}{subsection.7.4}% 49
-\BOOKMARK [2][-]{subsection.A.9}{Text}{subsection.7.4}% 50
-\BOOKMARK [2][-]{subsection.A.10}{Text}{subsection.7.4}% 51
-\BOOKMARK [2][-]{subsection.A.11}{Text}{subsection.7.4}% 52
-\BOOKMARK [1][-]{figure.18}{Erkl\344rung}{}% 53
+\BOOKMARK [2][-]{subsection.3.3}{Datentypen}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Code Implementierung}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Auswahl des Design Pattern}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Init und Shutdown Funktion}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{User Interface}{section.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Initialisierung des Front Panels}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.3}{De-/Aktivieren von Schaltfl\344chen}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Update der Set-Ablaufliste}{subsection.4.3}% 24
+\BOOKMARK [3][-]{subsubsection.4.3.5}{Update der Lichtkan\344le}{subsection.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.4}{Aufnahme-Funktion}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.5}{Timing}{section.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Funktional globale Variable}{subsection.4.5}% 28
+\BOOKMARK [2][-]{subsection.4.6}{Abspiel-Funktion}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.7}{Stopp-Funktion}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.8}{Speichern und Lade Funktion}{section.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.8.1}{In Datei speichern}{subsection.4.8}% 32
+\BOOKMARK [3][-]{subsubsection.4.8.2}{Aus Datei laden}{subsection.4.8}% 33
+\BOOKMARK [2][-]{subsection.4.9}{Fehlerbehandlung}{section.4}% 34
+\BOOKMARK [1][-]{section.5}{Testen}{}% 35
+\BOOKMARK [1][-]{section.6}{Anwendung}{}% 36
+\BOOKMARK [2][-]{subsection.6.1}{Stand-Alone Applikation}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.2}{Installer}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.3}{Webservice}{section.6}% 39
+\BOOKMARK [1][-]{section.7}{Abschlie\337ende Betrachtung}{}% 40
+\BOOKMARK [2][-]{subsection.7.1}{Multilingualit\344t}{section.7}% 41
+\BOOKMARK [2][-]{subsection.7.2}{Update }{section.7}% 42
+\BOOKMARK [2][-]{subsection.7.3}{Information Hiding}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.4}{Erweiterungen}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.5}{Probleme}{section.7}% 45
+\BOOKMARK [1][-]{subsection.7.5}{Literaturverzeichnis}{}% 46
+\BOOKMARK [1][-]{subsection.7.5}{Anhang}{}% 47
+\BOOKMARK [2][-]{subsection.A.1}{Initialisierungsfunktion}{subsection.7.5}% 48
+\BOOKMARK [2][-]{subsection.A.2}{Shutdown-Funktion}{subsection.7.5}% 49
+\BOOKMARK [2][-]{subsection.A.3}{Initialisierung des Front Panels}{subsection.7.5}% 50
+\BOOKMARK [2][-]{subsection.A.4}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsection.7.5}% 51
+\BOOKMARK [2][-]{subsection.A.5}{De-/Aktivieren von Schaltfl\344chen}{subsection.7.5}% 52
+\BOOKMARK [2][-]{subsection.A.6}{Update der Set-Ablaufliste}{subsection.7.5}% 53
+\BOOKMARK [2][-]{subsection.A.7}{Update der Lichtkan\344le}{subsection.7.5}% 54
+\BOOKMARK [2][-]{subsection.A.8}{Timing Modul}{subsection.7.5}% 55
+\BOOKMARK [2][-]{subsection.A.9}{Abspiel Zustandsautomat - \334berblenden}{subsection.7.5}% 56
+\BOOKMARK [2][-]{subsection.A.10}{Stopp-Funktion}{subsection.7.5}% 57
+\BOOKMARK [2][-]{subsection.A.11}{Speicher-Funktion}{subsection.7.5}% 58
+\BOOKMARK [2][-]{subsection.A.12}{Lade-Funktion}{subsection.7.5}% 59
+\BOOKMARK [2][-]{subsection.A.13}{Text}{subsection.7.5}% 60
+\BOOKMARK [2][-]{subsection.A.14}{Text}{subsection.7.5}% 61
+\BOOKMARK [1][-]{figure.22}{Erkl\344rung}{}% 62
