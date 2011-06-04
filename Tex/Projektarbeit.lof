@@ -6,16 +6,20 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Datenfluss Diagramm f\IeC {\"u}r die Abspiel-Funktion}}{7}{figure.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Design Struktur f\IeC {\"u}r das Blockdiagramm}}{8}{figure.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Display Schleife}}{9}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Aufnahme-Funktion}}{11}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Initialisierungsfunktion}}{16}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Shutdown-Funktion}}{17}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Initialisierung des Front Panels}}{17}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Auswahl eines Lichtsets aus der Lichterset Queue}}{17}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces De-/Aktivieren von Schaltfl\IeC {\"a}chen}}{18}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Update der Set-Ablaufliste}}{18}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Update der Lichtkan\IeC {\"a}le}}{18}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Text}}{19}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Text}}{19}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Text}}{19}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Text}}{20}{figure.18}
+\contentsline {figure}{\numberline {7}{\ignorespaces Aufnahme-Funktion}}{12}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces FGV Timing VI}}{13}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Initialisierungsfunktion}}{18}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Shutdown-Funktion}}{19}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Initialisierung des Front Panels}}{19}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Auswahl eines Lichtsets aus der Lichterset Queue}}{19}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces De-/Aktivieren von Schaltfl\IeC {\"a}chen}}{20}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Update der Set-Ablaufliste}}{20}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Update der Lichtkan\IeC {\"a}le}}{21}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Timing Modul}}{21}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Abspiel Zustandsautomat - \IeC {\"U}berblenden}}{22}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Stopp-Funktion}}{23}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Speicher-Funktion}}{23}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Lade-Funktion}}{24}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Text}}{24}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Text}}{24}{figure.22}
 \contentsfinish 

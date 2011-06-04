@@ -2,10 +2,7 @@
 	\label{sec:labview}
 	
 LabVIEW ist ein grafisches Programmiersystem von National Instruments. Das Akronym steht für "`Laboratory Virtual Instrumentation Engineering Workbench"'.
-
-Die Programmierung erfolgt in der graphischen Programmiersprache "`G"'.  LabVIEW-Programme werden als Virtuelle Instrumente (VIs) bezeichnet. \cite{ni-tuto}
-%\cite{wiki-lv}
-
+Die Programmierung erfolgt in der graphischen Programmiersprache "`G"'.  LabVIEW-Programme werden als Virtuelle Instrumente (VIs) bezeichnet. \cite{ni-tuto} \cite{wiki-lv}
 Sie bestehen aus drei Komponenten: 
 \begin{description}
 	\item[Frontpanel] Das User-Interface, über welches der Anwender mit dem VI interagiert.
@@ -13,7 +10,7 @@ Sie bestehen aus drei Komponenten:
 	\item[Anschluss] Dient zur Anbindung an weitere VIs. Bestimmt Übergabe und Rückgabe Werte. 
 \end{description}
 
-In LabVIEW liegt die Ausführung von VIs dem Datenflussmodell zugrunde. Ein Blockdiagrammknoten (Bsp. Addition) wird ausgeführt, sobald all seine Eingänge belegt sind. Ist die Ausführung eines Knotens abgeschlossen, werden die Daten an die Ausgabeanschlüsse übergeben und die Ausgabedaten dann an den nächsten Knoten im Datenflussdiagramm weitergeleitet. \cite{LVT}
+In LabVIEW liegt die Ausführung von VIs dem Datenflussmodell zugrunde. Ein Blockdiagrammknoten (Bsp. Addition) wird ausgeführt, sobald all seine Eingänge belegt sind. Ist die Ausführung eines Knotens abgeschlossen, werden die Daten an die Ausgabeanschlüsse übergeben und die Ausgabedaten dann an den nächsten Knoten im Datenflussdiagramm weitergeleitet. \cite{labview-buch01}
 Die unter LabVIEW erstellten Blockdiagramme werden von einem grafischen Compiler in optimierten Maschinencode übersetzt. Dadurch ist die Performance vergleichbar mit der anderer Hochsprachen wie C oder Pascal. \cite{ni-compiler}
 
 Abbildung \ref{fig:demo01} zeigt eine kleine Demonstration. Es wird aus den Eingängen A und B ein Ausgang C berechnet. Die Formel wird im Blockdiagramm abgebildet. Sie lautet:
@@ -40,7 +37,7 @@ LabView bietet neun verschiedene Entwurfsmuster. Für welches man sich entscheid
 	\item Gibt es parallele Operationen?
 \end{itemize}
 
-Im folgenden gehe ich auf einige Entwurfsmuster ein, die für meine Problemstellung infrage kommen könnten. Das sind: der Zustandsautomat, Master/Slave-Entwurfsmuster, Ereignisbehandler für Benutzeroberfläche und das Erzeuger/Verbraucher-Entwurfsmuster. Später im \ref{chap:designpattern} Kapitel werde ich auf meine Wahl des Entwurfsmuster eingehen.
+Im folgenden gehe ich auf einige Entwurfsmuster ein, die für meine Problemstellung infrage kommen könnten. Das sind: der Zustandsautomat, Master/Slave-Entwurfsmuster, Ereignisbehandler für Benutzeroberfläche und das Erzeuger/Verbraucher-Entwurfsmuster. Später im Abschnitt \ref{chap:designpattern} werde ich auf meine Wahl des Entwurfsmuster eingehen.
 
 \subsubsection{Zustandsautomat}%4-6
 Mit jedem Zustand wird ein bestimmter Blockdiagramm Ausschnitt ausgeführt und ermittelt, zu welchem Zustand weitergesprungen wird. In einer While-Schleife wird eine Case-Struktur ausgeführt. 
@@ -64,7 +61,7 @@ So kann man durch die parallele Ausführung der Schleifen Leistungssteigerung de
 \section{Programm Analyse}
 		%\subsection{Programmablaufplan} %2-18
 \subsection{Ablaufdiagramm }
-Mit Ablaufdiagrammen wird der Programmfluss illustriert. Mit deren Hilfe kann man eine Aufgabe in handhabbare Funktionen teilen. Abbildung \ref{fig:plan01} zeigt das Ablauf Diagramm für die Abspiel-Funktion in der Party-Licht-Steuerung. Ein Knoten repräsentiert eine Funktion.
+Mit Ablaufdiagrammen wird der Programmfluss illustriert. Mit deren Hilfe kann man eine Aufgabe in handhabbare Funktionen teilen. Abbildung \ref{fig:plan01} zeigt das Ablauf Diagramm für die Abspiel-Funktion in der Party-Licht-Steuerung. Ein Knoten repräsentiert einen Zustand.
 	\begin{figure}[h!]
 	\centering
 		\includegraphics[height=0.9\textheight]{Pics/play-flowchart.jpeg}
@@ -80,7 +77,10 @@ Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch ei
 	\caption{Datenfluss Diagramm für die Abspiel-Funktion}
 	\label{fig:plan02}
 	\end{figure}	
-		
+
+\subsection{Datentypen}
+Lichterset Cluster ...
+	
 %\section{User Interface}
 
 \section{Code Implementierung}
@@ -89,7 +89,7 @@ Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch ei
 		%4-18
 		Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher Design  (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden. Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und den auszuführenden Code gut trennen. 
 
-Das Entwurfsmuster wird wie folgend abgewandelt implementiert. Die Erzeuger Schleife reagiert auf Events vom User-Interface. Diese sind die drei Schaltflächen: Abspielen, Aufnehmen und Stoppen sowie die Menüauswahl: Speichern, Laden und Beenden.
+Das Entwurfsmuster wird wie folgend abgewandelt implementiert.  Die Erzeuger Schleife reagiert auf Events vom User-Interface. Diese sind die drei Schaltflächen: Abspielen, Aufnehmen und Stoppen sowie die Menüauswahl: Speichern, Laden und Beenden.
 
 Über eine Verbraucher-Queue tauscht die Erzeugerschleife Kommandos und Daten mit der Verbraucherschleife aus. Hier sind folgende Kommandos implementiert:
 \begin{itemize}
@@ -137,7 +137,7 @@ Die Initialisierungsfunktion wird beim Start der Anwendung ausgeführt. Die setz
 Wenn der Benutzer im Menü auf Datei$\rightarrow$Beenden klickt wird die Anwendung sicher heruntergefahren, dass heißt es werden alle Speicher-Referenzen freigegeben. Abbildung \ref{fig:a2} im Anhang zeigt das Blockdiagramm vom \textit{"`shutdown.vi"'}.
 
 \subsection{User Interface}
-Die Display-Schleife sorgt für Updates auf dem User Interface.  Abbildung \ref{fig:disp} zeigt diese mit dem Stopp Case. Zu beginn wird ein Element aus der Display Queue genommen und dann nach Typ und Daten aufgeschlüsselt. Anhand des Datentyps, das die sie von der Verbraucherschleife erhalten wird der entsprechende Case aufgerufen. Bei dem Kommando Stopp wird die While-Schleife beendet. Sollte ein Fehler in einem Case aufgetreten sein, wird es vom \textit{"`Error Module.vi"'} behandelt.
+Die Display-Schleife sorgt für Updates auf dem User Interface.  Abbildung \ref{fig:disp} zeigt diese mit dem Stopp Case. Zu beginn wird ein Element aus der Display Queue genommen und dann nach Typ und Daten aufgeschlüsselt. Anhand des Datentyps, das die sie von der Verbraucherschleife erhalten wird der entsprechende Case aufgerufen. Bei dem Kommando Stopp wird die While-Schleife beendet. Sollte ein Fehler in einem Case aufgetreten sein, wird es vom \textit{"`Error Module.vi"'} behandelt. Dazu später mehr, im Abschnitt XX Fehlerbehandlung. Im folgenden werden die einzelnen Cases in der Display-Schleife erläutert.
 
 	\begin{figure}[h!]
 	\centering
@@ -154,12 +154,12 @@ Dieser Case erstellt ein 2D-Array von Lichtkanälen und stellt es auf dem Front 
 Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a3}.
 
 \subsubsection{Auswahl eines Lichtsets aus der Lichterset Queue}
-In diesem Case wird eine Spalte in Ablaufkontrolle hervorgehoben. Entweder wenn der User darauf klickt oder wenn die Applikation über die Queue von Lichtersets iteriert. 
+In diesem Case wird eine Spalte in Ablaufkontrolle hervorgehoben. Entweder wenn der User darauf klickt oder wenn die Applikation beim Abspielen über die Queue von Lichtersets iteriert. 
 
 Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a4}.
  
 \subsubsection{De-/Aktivieren von Schaltflächen}
-Wenn eine Lichterset Queue abgespielt wird, schaltet dieser Case die Schaltfläche Aufnehmen und die Ablaufkontrollliste inaktiv. 
+Wenn eine Lichterset Queue abgespielt wird, schaltet dieser Case die Schaltfläche Aufnehmen und die Ablaufkontrollliste inaktiv. Das verhindert, das der Nutzer während eines Abspielvorgangs ein neues Lichterset anlegt oder die Ablaufkontrollliste durcheinander bringt.
 
 Der entsprechende Ausschnitt aus dem Programmcode ist im Anhang auf Abbildung \ref{fig:a5}.
 
@@ -194,28 +194,50 @@ Die Abbildung \ref{fig:rec} zeigt die Erzeuger-(oben) und Verbraucherschleife(un
 	\caption{Aufnahme-Funktion}
 	\label{fig:rec}
 	\end{figure}
+	
+	
+\subsection{Timing}
+Zur akkuraten Berechnung der Warte-, Überblendungs- und Nachlaufzeit beim Abspielen der Lichtersets dient das Timing VI. Dieses VI arbeitet als funktionale globale Variable (FGV).
+
+\subsubsection{Funktional globale Variable}
+In FGVs können in nicht initialisierten Schieberegistern von While- oder For-Schleifen Daten gehalten werden. 
+Die Daten bleiben erhalten, solange sich das zugehörige VI im Speicher befindet. Die jeweilige Schleife in einer FGV wird bei einem Aufruf nur einmal durchlaufen. Liegen die Daten am Ende der Schleife (rechts) im Schieberegister an, stehen diese beim nächsten Aufruf wieder am Anfang (links) an.
+
+Das hat den Vorteile das Daten nicht immer bei jedem VI Aufruf mit geführt werden müssen. Die Daten werden einmal beim initialisieren mitgegeben halten sich dann im Speicher.
+
+Die Timing FGV hat zwei Kommandos: starten bzw. initialisieren und checken. Die Auswahl wird über eine Switch-Case-Anweisung getroffen. Soll eine Zeit gemessen werden, wird zu beginn der Messung das Timing VI mit der Ziel-Zeit und dem Kommando Start aufgerufen. Hier wird die aktuelle Systemzeit in Sekunden ermittelt (Startzeit) und ins Schieberegister geschrieben. In der Applikation wird in einer Schleife dann immer mit dem Kommando check abgefragt ob die Zeit abgelaufen ist. Ist das der Fall, gibt die FGV am Ausgang "`Verstrichen"' True zurück, sonst False. Abbildung \ref{fig:timing} zeigt die FGV mit ihren beiden Cases. 
+
+	\begin{figure}[h!]
+	\centering
+		\includegraphics[width=\textwidth]{Pics/timing.png}
+	\caption{FGV Timing VI}
+	\label{fig:timing}
+	\end{figure}
 
 
 \subsection{Abspiel-Funktion}
 Die Abspiel-Funktion wird als Zustandsautomat implementiert. Das Flussdiagramm aus Abbildung \ref{fig:plan01} zeigt die einzelnen Zustände. 
 
-Empfängt die Verbraucherschleife das Kommando zum Abspielen öffnet sie das \textit{"`record.vi"'}. Das VI durchläuft ein Zustand. Gibt es zurück, das der Zustandsautomat noch nicht bis zum Ende durchgelaufen ist, steckt die Verbraucherschleife erneut das Kommando play in die Verbraucher Queue. Daraus resultiert eine Schleife die solange läuft, bis der Abspielvorgang beendet ist.
-Zur Berechnung, ob die verschieden Zeiten abgelaufen sind wird das  \textit{"`timing.vi"'} aufgerufen.
+Empfängt die Verbraucherschleife das Kommando zum Abspielen öffnet sie das \textit{"`record.vi"'}. Das VI durchläuft ein Zustand. Gibt es zurück, das der Zustandsautomat noch nicht bis zum Ende durchgelaufen ist, steckt die Verbraucherschleife erneut das Kommando play in die Verbraucher Queue. Daraus resultiert eine Schleife in der bei jeder iteration ein Zustand durchläuft, solange bis der Zustandsautomat am Ende ist.
+Zur Berechnung, ob die verschieden Zeiten abgelaufen sind wird das  \textit{"`timing.vi"'} aufgerufen. Im Anhang in Abbildung \ref{fig:a9} findet sich der Code für den Zustand Überblenden.
 
-\subsubsection{Timing}
-Zur akkuraten Berechnung der Warte-, Überblendungs- und Nachlaufzeit dient das Timing VI. In diesem wird über die Funktion "`Datum/Zeit in Sekunden ermitteln "' die seit dem Start verstrichene Zeit ermittelt. Abbildung \ref{fig:a8} im Anhang zeigt den Codeausschnitt mit dem überprüft wird, ob eine Zielzeit schon erreicht wurde. Dieses VI arbeitet als Funktionale-Globale-Variable.
+\subsection{Stopp-Funktion}
+Will der Bediener den Abspiel-Vorgang abbrechen, klickt er auf die Stopp Schaltfläche. Jetzt wird der Zustandsautomaten der Abspiel-Funktion unterbrochen. Das geschieht indem die Verbraucher Queue geleert und der Zustandsautomat zurückgesetzt wird. So wird garantiert, das keine Nachrichten mehr in der Verbraucher-Queue sind und der Zustandsautomat beim nächsten Anlauf wieder am Anfang startet. Der Code kann im Anhang bei Abbildung \ref{fig:a10} gefunden werden.
+		
+		
+\subsection{Speichern und Lade Funktion}
+Die Funktionalität zum speichern und laden in eine Datei ist für ein LJ unerlässlich. So kann er während einer Probe alle Einstellungen setzen und diese in eine Datei schreiben. Zum Zeitpunkt des Events muss die Datei nur noch geladen werden. 
 
-% http://www.fu-net.de/lv/lv02/lv_tut02_v04_062.jpg
+Zum speichern oder laden klickt der LJ in die Menüleiste unter Datei auf speichern bzw. laden. Die Applikation (Erzeugerschleife) öffnet ein File-Dialog und prüft ob die ausgewählte Datei existiert. Dann schickt sie das entsprechende Kommando (load oder save) zusammen mit dem Dateipfad an die Verbraucherschleife.
 
-		
-		
-		\subsection{Stopp-Funktion}
-		
-		
-		\subsection{Speichern und Lade Funktion}
-		
-			
-		\subsection{Fehlerbehandlung}
+\subsubsection{In Datei speichern}
+In der Verbraucherschleife wird über eine For-Schleife ein 1D-Array aus Lichtersets erstellt. Dieses wird an das \textit{"`File-Modul.vi"'} übergeben. Hier wird das 1D-Array in die angegebene Datei geschrieben. Hierfür die vorgefertigten LabView VIs genutzt: Öffnen, Schreiben und Schließen einer Datei. Der Code ist im Anhang unter Abbildung \ref{fig:a11}.
+
+\subsubsection{Aus Datei laden}
+Um aus einer Datei Elemente lesen zu können muss man der Lese-Funktion den Lichterset Datentyp mitgeben. Zurück bekommt man ein 1D-Array aus Lichtersets. Diese wird dann in die Lichterset Queue geschrieben. Der Code ist im Anhang unter Abbildung \ref{fig:a12}.
+
+
+\subsection{Fehlerbehandlung}
 
 \section{Testen}		
 
@@ -230,4 +252,7 @@ Zur akkuraten Berechnung der Warte-, Überblendungs- und Nachlaufzeit dient das 
 	\subsection{Information Hiding} %E4-5
 	\subsection{Erweiterungen}
 	Hardware Ansteuerung, Visualisierung größer
+	
+	\subsection{Probleme}
+	Stop Button
 

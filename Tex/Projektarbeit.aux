@@ -26,11 +26,12 @@
 \@writefile{lot}{\select@language{ngerman}}
 \newlabel{chap:Zusammenfassung}{{}{A}{\relax }{Doc-Start}{}}
 \newlabel{chap:Abstract}{{}{A}{\relax }{Doc-Start}{}}
-\@writefile{toc}{\contentsline {section}{Abbildungsverzeichnis}{III}{Doc-Start}}
-\@writefile{toc}{\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{IV}{Doc-Start}}
+\@writefile{toc}{\contentsline {section}{Abbildungsverzeichnis}{IV}{Doc-Start}}
+\@writefile{toc}{\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{V}{Doc-Start}}
 \@input{Einleitung.aux}
 \citation{ni-tuto}
-\citation{LVT}
+\citation{wiki-lv}
+\citation{labview-buch01}
 \citation{ni-compiler}
 \@writefile{toc}{\contentsline {section}{\numberline {2}LabVIEW als Programmiersprache}{3}{section.2}}
 \newlabel{sec:labview}{{2}{3}{LabVIEW als Programmiersprache\relax }{section.2}{}}
@@ -45,6 +46,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3}Programm Analyse}{5}{section.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Ablaufdiagramm }{5}{subsection.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Datenfluss Diagramm}{5}{subsection.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Datentypen}{5}{subsection.3.3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Ablaufdiagramm f\IeC {\"u}r die Abspiel-Funktion}}{6}{figure.3}}
 \newlabel{fig:plan01}{{3}{6}{Ablaufdiagramm für die Abspiel-Funktion\relax }{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Datenfluss Diagramm f\IeC {\"u}r die Abspiel-Funktion}}{7}{figure.4}}
@@ -64,22 +66,29 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Update der Set-Ablaufliste}{10}{subsubsection.4.3.4}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Update der Lichtkan\IeC {\"a}le}{10}{subsubsection.4.3.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Aufnahme-Funktion}{10}{subsection.4.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Aufnahme-Funktion}}{11}{figure.7}}
-\newlabel{fig:rec}{{7}{11}{Aufnahme-Funktion\relax }{figure.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Abspiel-Funktion}{12}{subsection.4.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Stopp-Funktion}{13}{subsection.4.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Speichern und Lade Funktion}{13}{subsection.4.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Fehlerbehandlung}{13}{subsection.4.8}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Testen}{13}{section.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Anwendung}{13}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Stand-Alone Applikation}{13}{subsection.6.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Installer}{13}{subsection.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Webservice}{13}{subsection.6.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Abschlie\IeC {\ss }ende Betrachtung}{13}{section.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Multilingualit\IeC {\"a}t}{13}{subsection.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Update }{13}{subsection.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Information Hiding}{13}{subsection.7.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Erweiterungen}{13}{subsection.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Timing}{11}{subsection.4.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}Funktional globale Variable}{11}{subsubsection.4.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Aufnahme-Funktion}}{12}{figure.7}}
+\newlabel{fig:rec}{{7}{12}{Aufnahme-Funktion\relax }{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Abspiel-Funktion}{12}{subsection.4.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces FGV Timing VI}}{13}{figure.8}}
+\newlabel{fig:timing}{{8}{13}{FGV Timing VI\relax }{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Stopp-Funktion}{13}{subsection.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Speichern und Lade Funktion}{14}{subsection.4.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.1}In Datei speichern}{14}{subsubsection.4.8.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.2}Aus Datei laden}{14}{subsubsection.4.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Fehlerbehandlung}{15}{subsection.4.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Testen}{15}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Anwendung}{15}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Stand-Alone Applikation}{15}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Installer}{15}{subsection.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Webservice}{15}{subsection.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Abschlie\IeC {\ss }ende Betrachtung}{15}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Multilingualit\IeC {\"a}t}{15}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Update }{15}{subsection.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Information Hiding}{15}{subsection.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Erweiterungen}{15}{subsection.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Probleme}{15}{subsection.7.5}}
 \@input{Literatur.aux}
 \@input{Anhang.aux}
 \@input{Erklaerung.aux}
