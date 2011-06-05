@@ -213,6 +213,39 @@
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
+			<Item Name="PLS Webservice" Type="RESTful WS">
+				<Property Name="Bld_buildSpecName" Type="Str">PLS Webservice</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">German</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../PLS-Code/Builds/Web</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">WebService.lvws</Property>
+				<Property Name="Destination[0].path" Type="Path">../PLS-Code/Builds/Web/internal.llb</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Hilfsdatei-Verzeichnis</Property>
+				<Property Name="Destination[1].path" Type="Path">../PLS-Code/Builds/Web/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="RESTfulWebSrvc_routingTemplate[0].template" Type="Str">/PLS_Main</Property>
+				<Property Name="RESTfulWebSrvc_routingTemplate[0].VIName" Type="Str">PLS Main.vi</Property>
+				<Property Name="RESTfulWebSrvc_routingTemplateCount" Type="Int">1</Property>
+				<Property Name="Source[0].itemID" Type="Str">{77883140-4AE8-4E68-B6C5-8CA1FA7B55D9}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PLS Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">RESTfulVI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">PLS Webservice</Property>
+				<Property Name="TgtF_internalName" Type="Str">PLS Webservice</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 </Property>
+				<Property Name="TgtF_productName" Type="Str">PLS Webservice</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{97FA4549-CB7A-4DB8-9741-12531F8B43E5}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">WebService.lvws</Property>
+				<Property Name="WebSrvc_standaloneService" Type="Bool">true</Property>
+			</Item>
 		</Item>
 	</Item>
 </Project>
