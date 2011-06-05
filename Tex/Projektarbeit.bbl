@@ -1,11 +1,40 @@
-\begin{thebibliography}{NI11b}
+\begin{thebibliography}{Jam97}
+
+\bibitem[Jam97]{labview-buch01}
+{\sc Jamal, Rahmal}: {\em LabVIEW -- Programmiersprache der vierten
+  Generation}.
+\newblock Prentice Hall, 1997.
+
+\bibitem[NI10]{LabViewHilfe}
+{\sc NI}: {\em LabVIEW-Hilfe}, Juni 2010.
+\newblock Integriert in die Entwicklungsumgebung.
 
 \bibitem[NI11a]{ni-tuto}
 {\sc NI}: {\em Einführung in LabVIEW - Dreistündiger Einführungskurs}.
 \newblock \url{http://www.ni.com/pdf/academic/d/labview_3_hrs.pdf}, 2011.
 \newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`labview3hrs.pdf"'}.
 
-\bibitem[NI11b]{ni-compiler}
+\bibitem[NI11b]{ni-kost}
+{\sc NI}: {\em NI Developer Suite Advisor}.
+\newblock
+  \url{http://ohm.ni.com/advisors/devsuite/pages/cds/newcustomer.xhtml}, 2011.
+\newblock Zugriff am 5.6.2011 um 17:11 in Datei
+  \textit{"`NI-Developer-Suite.pdf"'}.
+
+\bibitem[NI11c]{ni-pci}
+{\sc NI}: {\em NI PCI-6723 Analogausgangsmodul für statische Signale und
+  Signalverläufe: 13 bit, 32 Kanäle}.
+\newblock \url{http://sine.ni.com/nips/cds/view/p/lang/de/nid/12551}, 2011.
+\newblock Zugriff am 5.6.2011 um 17:11 in Datei \textit{"`NI-PCI-6723.pdf"'}.
+
+\bibitem[NI11d]{ni-min}
+{\sc NI}: {\em Systemvoraussetzungen für LabVIEW-Entwicklungssysteme und
+  -Module}.
+\newblock \url{http://www.ni.com/labview/requirements/d/}, 2011.
+\newblock Zugriff am 5.6.2011 um 17:11 in Datei
+  \textit{"`Systemvoraussetzungen-LabVIEW.pdf"'}.
+
+\bibitem[NI11e]{ni-compiler}
 {\sc NI}: {\em Wie funktioniert der Compiler von NI LabVIEW?}
 \newblock \url{http://zone.ni.com/devzone/cda/tut/p/id/11936}, 2011.
 \newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`Compiler LabVIEW -

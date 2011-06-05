@@ -4,6 +4,6 @@
 
 </nicomment>
 <nierror code="5000">
-Cue Data Error
+Queue Data Error
 </nierror>
 </nidocument>

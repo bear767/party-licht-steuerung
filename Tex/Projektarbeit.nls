@@ -2,11 +2,18 @@
 
  \nomgroup{A}
 
-  \item [{\textbf{ }}]\begingroup  \nomeqref {0}\nompageref{IV}
-  \item [{\textbf{LabView}}]\begingroup  LV\nomeqref {0}\nompageref{IV}
+  \item [{\textbf{FGV}}]\begingroup funktionale globale Variable\nomeqref {0}
+		\nompageref{V}
+  \item [{\textbf{LabVIEW}}]\begingroup  Laboratory Virtual Instrumentation Engineering Workbench\nomeqref {0}
+		\nompageref{V}
   \item [{\textbf{LJ}}]\begingroup Light Jockey (dt. Lichttechniker) \nomeqref {0}
-		\nompageref{IV}
+		\nompageref{V}
   \item [{\textbf{NI}}]\begingroup National Instruments\nomeqref {0}
-		\nompageref{IV}
+		\nompageref{V}
+  \item [{\textbf{subVI}}]\begingroup unter Programm eines VIs\nomeqref {0}
+		\nompageref{V}
+  \item [{\textbf{VI}}]\begingroup virtuelles Instrument\nomeqref {0}
+		\nompageref{V}
+  \item [{\textbf{}}]\begingroup \nomeqref {0}\nompageref{V}
 
 \end{thenomenclature}
