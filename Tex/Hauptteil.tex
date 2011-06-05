@@ -79,7 +79,40 @@ Datenfluss Diagramme haben die Aufgabe zu zeigen, welchen Weg die Daten durch ei
 	\end{figure}	
 
 \subsection{Datentypen}
-Lichterset Cluster ...
+
+\subsubsection{Objekte}
+\begin{description}
+\item[Lichtkanal]Eine Lampe mit einer Farbe, Intensität und Nummer.
+\item[Lichterset]Ein Array aus Lampen mit einer Warte-, Überblendungs- und Nachlaufzeit sowie einem Namen.
+\item[Lichterset Queue] Eine Liste mit allen Lichtersets.
+
+\item[Verbraucher Queue]Die Warteschlange für die Verbraucherschleife, hier stehen Befehle von der Erzeugerschleife drin. 
+Das Objekt besteht aus einem Cluster mit: ein "`Kommando"' vom Typ "`Enum"' und einem "`Daten"' vom Typ Variant.
+
+Der Datentyp "`Variant"' ist ein allgemeiner Container für alle anderen Datentypen in LabVIEW. Sind Daten in ein Variantwert konvertiert, werden die Daten und der ursprüngliche Datentyp gespeichert. So kann LabVIEW die Variantdaten zu einen anderen Zeitpunkt wieder fehlerfrei in den ursprünglichen Datentyp umwandeln. \ref{LabViewHilfe}
+
+\item[Display Queue]Die Warteschlange für die Displayschleife, über diese kommunziert die Verbraucherschleife mit ihr. Enthält das selbe Cluster wie die Verbraucher Queue
+
+\end{description}
+
+
+\subsubsection{Module}
+
+\begin{description}
+\item[Lichterset Modul]
+Ist eine FGV. Das Lichterset Modul initalisiert ein 1D-Array aus Lichterset Objekten(Lichterset Queue) und führt die Anweisungen Add Get und Set sowie getAnzahl und getLeeresLichterset darauf aus.
+
+
+\item[Display Modul]
+Diese FGV Kontrollier die 
+
+\item[Timing Modul]
+\item[Fehler Modul]
+
+\end{description}
+
+
+
 	
 %\section{User Interface}
 
