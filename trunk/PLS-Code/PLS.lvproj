@@ -117,6 +117,8 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 			</Item>
 			<Item Name="Light Open.vi" Type="VI" URL="../API/Hardware/Light Open.vi"/>
 			<Item Name="Refnum Enum.ctl" Type="VI" URL="../API/Hardware/Refnum Enum.ctl"/>
@@ -127,19 +129,18 @@
 			<Item Name="Light Color Controller.vi" Type="VI" URL="../API/Hardware/Light Color Controller.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="TLC Application" Type="EXE">
+			<Item Name="PLS Applikation" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{774786CF-4541-4A2D-8029-FC2A785B6EBB}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{CA6B1C9A-F620-43D4-A422-C7B5C6B65EFB}</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.National Instruments.com</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TLC Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">PLS Applikation</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">German</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Course Project/Builds/Executable</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_targetDestDir" Type="Path"></Property>
-				<Property Name="Destination[0].destName" Type="Str">TLC.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">PLS.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Course Project/Builds/Executable/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -147,7 +148,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Course Project/Builds/Executable/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/tlc.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C848C1A0-2574-45EF-B93C-D53D609C84FB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C734451C-7641-4376-A30C-0E4F8814F405}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PLS Main.vi</Property>
@@ -158,17 +159,16 @@
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TLC Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">PLS Applikation</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
-				<Property Name="TgtF_internalName" Type="Str">TLC Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2010 National Instruments</Property>
-				<Property Name="TgtF_productName" Type="Str">TLC Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">PLS Applikation</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011 Tim Berger</Property>
+				<Property Name="TgtF_productName" Type="Str">PLS Applikation</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{9AF7188A-6CD6-4FEC-B928-95C75384BE52}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">TLC.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">PLS.exe</Property>
 			</Item>
-			<Item Name="TLC Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">TLC</Property>
+			<Item Name="PLS Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">PLS</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{A7A1AF3B-C89D-417D-87D1-055C28ED2A18}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
@@ -185,14 +185,13 @@
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">../PLS2/Builds/Installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">TLC Installer</Property>
+				<Property Name="INST_buildSpecName" Type="Str">PLS Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{A7A1AF3B-C89D-417D-87D1-055C28ED2A18}</Property>
-				<Property Name="INST_productName" Type="Str">TLC</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_language" Type="Int">7</Property>
+				<Property Name="INST_productName" Type="Str">PLS</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">10018002</Property>
-				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
-				<Property Name="MSI_arpURL" Type="Str">http://www.NationalInstruments.com/</Property>
 				<Property Name="MSI_distID" Type="Str">{4503176C-D6EC-486B-BC96-054519554AA8}</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{D6E23987-5A37-460D-AE18-E756E3C06961}</Property>
@@ -202,15 +201,15 @@
 				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{A7A1AF3B-C89D-417D-87D1-055C28ED2A18}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{A7A1AF3B-C89D-417D-87D1-055C28ED2A18}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">TLC.exe</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">PLS.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Theatre Light Controller</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">TLC</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Party Licht Steuerung</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">PLS</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{9AF7188A-6CD6-4FEC-B928-95C75384BE52}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">TLC Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/TLC Application</Property>
+				<Property Name="Source[0].name" Type="Str">PLS Applikation</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/PLS Applikation</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
