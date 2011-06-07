@@ -40,4 +40,10 @@
 \newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`Compiler LabVIEW -
   Developer Zone - National Instruments.pdf"'}.
 
+\bibitem[Wik11]{wiki-RC}
+{\sc Wikipedia}: {\em Race Condition}.
+\newblock \url{http://de.wikipedia.org/wiki/Race_Condition}, 2011.
+\newblock Zugriff am 7.6.2011 um 13:03 in Datei
+  \textit{"`wiki-raceconditions.pdf"'}.
+
 \end{thebibliography}
