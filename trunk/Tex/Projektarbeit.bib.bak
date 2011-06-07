@@ -65,6 +65,16 @@
   timestamp = {2011.06.02}
 }
 
+@MISC{LabViewHilfe,
+  author = {NI},
+  title = {LabVIEW-Hilfe},
+  month = {Juni},
+  year = {2010},
+  note = {Integriert in die Entwicklungsumgebung},
+  owner = {Hua},
+  timestamp = {2011.06.05}
+}
+
 @MISC{wiki-lv,
   author = {Wikipedia},
   title = {LabVIEW},
@@ -73,6 +83,16 @@
   note = {Zugriff am 2.6.2011 um 14:03 in Datei \textit{"`wiki-labview.pdf"'}},
   owner = {Hua},
   timestamp = {2011.06.02}
+}
+
+@MISC{wiki-RC,
+  author = {Wikipedia},
+  title = {Race Condition},
+  howpublished = {\url{http://de.wikipedia.org/wiki/Race_Condition}},
+  year = {2011},
+  note = {Zugriff am 7.6.2011 um 13:03 in Datei \textit{"`wiki-raceconditions.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.06.07}
 }
 
 @comment{jabref-meta: selector_publisher:}
