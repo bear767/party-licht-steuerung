@@ -6,10 +6,10 @@
 \BOOKMARK [2][-]{subsection.1.3}{Dokumentation}{section.1}% 6
 \BOOKMARK [2][-]{subsection.1.4}{Aufbau der Arbeit}{section.1}% 7
 \BOOKMARK [1][-]{section.2}{LabVIEW als Programmiersprache}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{Entwurfsmuster - Design Pattern}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Entwurfsmuster - Design Patterns}{section.2}% 9
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Zustandsautomat}{subsection.2.1}% 10
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Master/Slave-Entwurfsmuster}{subsection.2.1}% 11
-\BOOKMARK [3][-]{subsubsection.2.1.3}{Einfacher Ereignisbehandler f\374r Benutzeroberfl\344che}{subsection.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Einfache Ereignisbehandlungsroutine f\374r die Benutzeroberfl\344che}{subsection.2.1}% 12
 \BOOKMARK [3][-]{subsubsection.2.1.4}{Erzeuger/Verbraucher-Entwurfsmuster}{subsection.2.1}% 13
 \BOOKMARK [1][-]{section.3}{Programmentwurf}{}% 14
 \BOOKMARK [2][-]{subsection.3.1}{Datenabstraktion}{section.3}% 15
@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.3.2}{Ablaufdiagramm }{section.3}% 18
 \BOOKMARK [2][-]{subsection.3.3}{Datenflussdiagramm}{section.3}% 19
 \BOOKMARK [1][-]{section.4}{Implementierung}{}% 20
-\BOOKMARK [2][-]{subsection.4.1}{Auswahl des Design Pattern}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.1}{Auswahl des Design Patterns}{section.4}% 21
 \BOOKMARK [2][-]{subsection.4.2}{Init und Shutdown Funktion}{section.4}% 22
 \BOOKMARK [2][-]{subsection.4.3}{User Interface}{section.4}% 23
 \BOOKMARK [3][-]{subsubsection.4.3.1}{Initialisierung des Front Panels}{subsection.4.3}% 24
@@ -35,28 +35,29 @@
 \BOOKMARK [3][-]{subsubsection.4.8.1}{In Datei speichern}{subsection.4.8}% 35
 \BOOKMARK [3][-]{subsubsection.4.8.2}{Aus Datei laden}{subsection.4.8}% 36
 \BOOKMARK [2][-]{subsection.4.9}{Fehlerbehandlung}{section.4}% 37
-\BOOKMARK [1][-]{section.5}{Stress- und Ladetest}{}% 38
-\BOOKMARK [1][-]{section.6}{Einsatz der Anwendung}{}% 39
-\BOOKMARK [2][-]{subsection.6.1}{Webservice}{section.6}% 40
-\BOOKMARK [1][-]{section.7}{Abschlie\337ende Betrachtung}{}% 41
-\BOOKMARK [2][-]{subsection.7.1}{Fazit}{section.7}% 42
-\BOOKMARK [2][-]{subsection.7.2}{Ausblick auf Erweiterungen}{section.7}% 43
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Ansteuerung von Hardware}{subsection.7.2}% 44
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Multilingualit\344t}{subsection.7.2}% 45
-\BOOKMARK [1][-]{subsubsection.7.2.2}{Literaturverzeichnis}{}% 46
-\BOOKMARK [1][-]{subsubsection.7.2.2}{Anhang}{}% 47
-\BOOKMARK [2][-]{subsection.A.1}{Initialisierungsfunktion}{subsubsection.7.2.2}% 48
-\BOOKMARK [2][-]{subsection.A.2}{Shutdown-Funktion}{subsubsection.7.2.2}% 49
-\BOOKMARK [2][-]{subsection.A.3}{Initialisierung des Front Panels}{subsubsection.7.2.2}% 50
-\BOOKMARK [2][-]{subsection.A.4}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsubsection.7.2.2}% 51
-\BOOKMARK [2][-]{subsection.A.5}{De-/Aktivieren von Schaltfl\344chen}{subsubsection.7.2.2}% 52
-\BOOKMARK [2][-]{subsection.A.6}{Update der Set-Ablaufliste}{subsubsection.7.2.2}% 53
-\BOOKMARK [2][-]{subsection.A.7}{Update der Lichtkan\344le}{subsubsection.7.2.2}% 54
-\BOOKMARK [2][-]{subsection.A.8}{Timing Modul}{subsubsection.7.2.2}% 55
-\BOOKMARK [2][-]{subsection.A.9}{Abspiel Zustandsautomat - \334berblenden}{subsubsection.7.2.2}% 56
-\BOOKMARK [2][-]{subsection.A.10}{Stopp-Funktion}{subsubsection.7.2.2}% 57
-\BOOKMARK [2][-]{subsection.A.11}{Speicher-Funktion}{subsubsection.7.2.2}% 58
-\BOOKMARK [2][-]{subsection.A.12}{Lade-Funktion}{subsubsection.7.2.2}% 59
-\BOOKMARK [2][-]{subsection.A.13}{Fehlerbehandlung}{subsubsection.7.2.2}% 60
-\BOOKMARK [2][-]{subsection.A.14}{Gesamter \334berblick \374ber das Main VI}{subsubsection.7.2.2}% 61
-\BOOKMARK [1][-]{figure.24}{Erkl\344rung}{}% 62
+\BOOKMARK [1][-]{section.5}{Funktionstest}{}% 38
+\BOOKMARK [1][-]{section.6}{Stress- und Ladetest}{}% 39
+\BOOKMARK [1][-]{section.7}{Einsatz der Anwendung}{}% 40
+\BOOKMARK [2][-]{subsection.7.1}{Webservice}{section.7}% 41
+\BOOKMARK [1][-]{section.8}{Abschlie\337ende Betrachtung}{}% 42
+\BOOKMARK [2][-]{subsection.8.1}{Fazit}{section.8}% 43
+\BOOKMARK [2][-]{subsection.8.2}{Ausblick auf Erweiterungen}{section.8}% 44
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Ansteuerung von Hardware}{subsection.8.2}% 45
+\BOOKMARK [3][-]{subsubsection.8.2.2}{Multilingualit\344t}{subsection.8.2}% 46
+\BOOKMARK [1][-]{subsubsection.8.2.2}{Literaturverzeichnis}{}% 47
+\BOOKMARK [1][-]{subsubsection.8.2.2}{Anhang}{}% 48
+\BOOKMARK [2][-]{subsection.A.1}{Initialisierungsfunktion}{subsubsection.8.2.2}% 49
+\BOOKMARK [2][-]{subsection.A.2}{Shutdown-Funktion}{subsubsection.8.2.2}% 50
+\BOOKMARK [2][-]{subsection.A.3}{Initialisierung des Front Panels}{subsubsection.8.2.2}% 51
+\BOOKMARK [2][-]{subsection.A.4}{Auswahl eines Lichtsets aus der Lichterset Queue}{subsubsection.8.2.2}% 52
+\BOOKMARK [2][-]{subsection.A.5}{De-/Aktivieren von Schaltfl\344chen}{subsubsection.8.2.2}% 53
+\BOOKMARK [2][-]{subsection.A.6}{Update der Set-Ablaufliste}{subsubsection.8.2.2}% 54
+\BOOKMARK [2][-]{subsection.A.7}{Update der Lichtkan\344le}{subsubsection.8.2.2}% 55
+\BOOKMARK [2][-]{subsection.A.8}{Timing Modul}{subsubsection.8.2.2}% 56
+\BOOKMARK [2][-]{subsection.A.9}{Abspiel Zustandsautomat - \334berblenden}{subsubsection.8.2.2}% 57
+\BOOKMARK [2][-]{subsection.A.10}{Stopp-Funktion}{subsubsection.8.2.2}% 58
+\BOOKMARK [2][-]{subsection.A.11}{Speicher-Funktion}{subsubsection.8.2.2}% 59
+\BOOKMARK [2][-]{subsection.A.12}{Lade-Funktion}{subsubsection.8.2.2}% 60
+\BOOKMARK [2][-]{subsection.A.13}{Fehlerbehandlung}{subsubsection.8.2.2}% 61
+\BOOKMARK [2][-]{subsection.A.14}{Gesamter \334berblick \374ber das Main VI}{subsubsection.8.2.2}% 62
+\BOOKMARK [1][-]{figure.25}{Erkl\344rung}{}% 63
