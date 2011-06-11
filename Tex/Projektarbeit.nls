@@ -8,11 +8,15 @@
 		\nompageref{V}
   \item [{\textbf{LJ}}]\begingroup Light Jockey (dt. Lichttechniker) \nomeqref {0}
 		\nompageref{V}
+  \item [{\textbf{LLVM}}]\begingroup Low-Level Virtual Machine\nomeqref {0}
+		\nompageref{V}
   \item [{\textbf{NI}}]\begingroup National Instruments\nomeqref {0}
 		\nompageref{V}
   \item [{\textbf{subVI}}]\begingroup unter Programm eines VIs\nomeqref {0}
 		\nompageref{V}
   \item [{\textbf{VI}}]\begingroup virtuelles Instrument\nomeqref {0}
+		\nompageref{V}
+  \item [{\textbf{VM}}]\begingroup virtuelle Maschine\nomeqref {0}
 		\nompageref{V}
   \item [{\textbf{}}]\begingroup \nomeqref {0}\nompageref{V}
 

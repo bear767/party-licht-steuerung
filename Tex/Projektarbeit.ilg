@@ -7,8 +7,8 @@ Scanning style file C:/Program Files/MiKTeX 2.9/makeindex/nomencl/nomencl.ist...
 ** Input style error (file = C:/Program Files/MiKTeX 2.9/makeindex/nomencl/nomencl.ist, line = 72):
    -- Unknown specifier lethead_flag.
 ...done (10 attributes redefined, 3 ignored).
-Scanning input file Projektarbeit.nlo....done (9 entries accepted, 0 rejected).
-Sorting entries....done (25 comparisons).
-Generating output file Projektarbeit.nls....done (19 lines written, 0 warnings).
+Scanning input file Projektarbeit.nlo....done (14 entries accepted, 0 rejected).
+Sorting entries....done (50 comparisons).
+Generating output file Projektarbeit.nls....done (23 lines written, 0 warnings).
 Output written in Projektarbeit.nls.
 Transcript written in Projektarbeit.ilg.

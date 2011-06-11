@@ -189,7 +189,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{A7A1AF3B-C89D-417D-87D1-055C28ED2A18}</Property>
 				<Property Name="INST_language" Type="Int">7</Property>
 				<Property Name="INST_productName" Type="Str">PLS</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.4</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">10018002</Property>
 				<Property Name="MSI_distID" Type="Str">{4503176C-D6EC-486B-BC96-054519554AA8}</Property>

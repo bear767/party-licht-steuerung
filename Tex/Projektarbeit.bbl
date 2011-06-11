@@ -1,9 +1,15 @@
-\begin{thebibliography}{Jam97}
+\begin{thebibliography}{Sam11}
 
 \bibitem[Jam97]{labview-buch01}
 {\sc Jamal, Rahmal}: {\em LabVIEW -- Programmiersprache der vierten
   Generation}.
 \newblock Prentice Hall, 1997.
+
+\bibitem[Lat11]{llvm}
+{\sc Lattner, Chris}: {\em LLVM Language Reference Manual}.
+\newblock \url{http://llvm.org/docs/LangRef.html}, 2011.
+\newblock Zugriff am 11.6.2011 um 15:03 in Datei \textit{"`LLVM Assembly
+  Language Reference Manual.pdf"'}.
 
 \bibitem[NI10]{LabViewHilfe}
 {\sc NI}: {\em LabVIEW-Hilfe}, Juni 2010.
@@ -39,6 +45,11 @@
 \newblock \url{http://zone.ni.com/devzone/cda/tut/p/id/11936}, 2011.
 \newblock Zugriff am 2.6.2011 um 14:27 in Datei \textit{"`Compiler LabVIEW -
   Developer Zone - National Instruments.pdf"'}.
+
+\bibitem[Sam11]{lattner}
+{\sc Samochodow, Marki}: {\em Low Level Virtual Machine}.
+\newblock \url{http://www.opel.samochodziki.info/de/Clang.html}, 2011.
+\newblock Zugriff am 11.6.2011 um 15:14 in Datei \textit{"`Lattner-llvm.pdf"'}.
 
 \bibitem[Wik11]{wiki-RC}
 {\sc Wikipedia}: {\em Race Condition}.

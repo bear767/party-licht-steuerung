@@ -14,10 +14,14 @@ In LabVIEW liegt das Datenflussmodell der Ausführung von VIs  zugrunde. Ein Blo
 Ist die Ausführung eines Knotens abgeschlossen, werden die Daten an die Ausgabeanschlüsse übergeben und die Ausgabedaten dann an den nächsten Knoten 
 im Datenflussdiagramm weitergeleitet. \cite{labview-buch01}
 Die unter LabVIEW erstellten Blockdiagramme werden von einem grafischen Compiler in optimierten Maschinencode übersetzt. 
-Dadurch ist die Performance zur Laufzeit vergleichbar mit der anderer Hochsprachen wie C oder Pascal. \cite{ni-compiler}
+Dadurch ist die Performance zur Laufzeit vergleichbar mit der anderer Hochsprachen wie C oder Pascal. 
 
-Abbildung \ref{fig:demo01} zeigt eine  Demonstration. Es wird aus den Eingängen A und B ein Ausgang C berechnet. Die Formel wird im Blockdiagramm abgebildet. Sie lautet:
-\[ C = \frac{A+B}{4}^{2} \]
+Dieser Compiler ist der Schlüssel für die Produktivität von LabVIEW. Er abstrahiert Aufgaben wie die Speicherzuweisung und die Verwaltung von Threads. In der aktuellen LabVIEW Version 2010 wurde in den Compiler eine  "`Low-Level Virtual Machine"' (LLVM) aufgenommen. Die LLVM ist eine Open-Source-Compiler-Infrastruktur und soll die Codeausführung  beschleunigen. 
+"`Die Architektur von LLVM basiert auf einer virtuellen Maschine (VM), die einen Prozessor virtualisiert. Die VM ist in der Lage, die intern generierte Sprache des Compilers während der Ausführung für den Prozessor des aktuellen Systems zu übersetzen."'\cite{lattner} Besonders hierbei ist, dass LLVM hocheffizient ist, was die Übersetzung auch in Echtzeit ermöglicht. \cite{llvm} \cite{ni-compiler}
+
+
+Abbildung \ref{fig:demo01} zeigt eine Demonstration einer LabVIEW Applikation. Es wird aus den Eingängen A und B ein Ausgang C berechnet. Die Formel wird im Blockdiagramm abgebildet. Sie lautet:
+\[ C = (\frac{A+B}{4})^{2} \]
 Des Weiteren findet die Berechnung in einer While-Schleife statt. Die Abbruchbedingung ist die Betätigung der Stopp-Schaltfläche. 
 
 	\begin{figure}%[h!]
@@ -28,7 +32,7 @@ Des Weiteren findet die Berechnung in einer While-Schleife statt. Die Abbruchbed
 	\end{figure}
 
 	%\subsection{Objektorientiertes Design}  %2-15
-	\subsection{Entwurfsmuster - Design Pattern}
+	\subsection{Entwurfsmuster - Design Patterns}
 	\label{chap:entwurfsmuster}
 Zur Entwicklung einer umfangreichen Applikation ist es unerlässlich mit Entwurfsmustern zu arbeiten. 
 Sie helfen nicht nur dem Entwickler, den Überblick  zu behalten, sondern machen es auch für Außenstehende einfacher, den Code zu lesen und zu modifizieren.
@@ -55,7 +59,7 @@ Bei diesem Entwurfsmuster gibt es eine Master-Schleife und mindestens eine Slave
 Sie benachrichtigt die Slave-Schleifen, einen bestimmten Code auszuführen. 
 Die Slave-Schleifen werden vollständig ausgeführt und warten dann auf die nächste Benachrichtigung.
 
-\subsubsection{Einfacher Ereignisbehandler für Benutzeroberfläche}
+\subsubsection{Einfache Ereignisbehandlungsroutine für die Benutzeroberfläche}
 Dieses Entwurfsmuster wird verwendet für die Verarbeitung von Ereignissen der Benutzeroberfläche. 
 Die Vorlage eignet sich für Dialogfelder und andere Programmoberflächen. 
 Des Weiteren kann man benutzerdefinierte Ereignisse erzeugen und ausführen, die wie Ereignisse der Benutzeroberfläche behandelt werden.
@@ -166,10 +170,9 @@ Eine externe Entität ist das Licht-Kontroll-System. Die Pfeile zeigen die Richt
 
 \section{Implementierung}
 \label{chap:impl}
-		\subsection{Auswahl des Design Pattern} %6-3
+		\subsection{Auswahl des Design Patterns} %6-3
 		\label{chap:designpattern} %4-18
-		Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher - Entwurfsmuster (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden.
-		Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und dem auszuführenden Code gut trennen. 
+Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher - Entwurfsmuster (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden. Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und dem auszuführenden Code gut trennen. Des Weiteren ist es möglich die verschiedenen Schleifen parallel auszuführen, durch hinzufügen weiterer Schleifen bleibt das Programm gut skalierbar. Ein anderer Grund für die Verwendung dieses Design Patterns ist die interne Kommunikation über Queues, das erleichtert das steuern des User-Interfaces.
 
 Das Entwurfsmuster wird wie folgt abgewandelt implementiert.  Die Erzeugerschleife reagiert auf Events vom User-Interface. 
 Hauptbestandteile des User-Interfaces  sind die drei Schaltflächen: Abspielen, Aufnehmen und Stoppen sowie die Menüauswahl: Speichern, Laden und Beenden.
@@ -295,6 +298,7 @@ Dann gibt sie das Kommando zum Aktualisieren des User-Interfaces an die Displays
 	
 	
 \subsection{Timing}
+\label{chap:timing}
 Zur akkuraten Berechnung der Warte-, Überblendungs- und Nachlaufzeit beim Abspielen der Lichtersets dient das Timing VI. 
 Dieses VI arbeitet als funktionale globale Variable (FGV).
 
@@ -367,6 +371,70 @@ Sind alle drei Schleifen beendet, wird in der letzten Sequenz der Applikation di
 die Ereignisregistrierung aufgehoben, die Benutzerereignisse gelöscht, der aufgetretene Fehler ausgegeben und die LabVIEW Anwendung beendet.
 
 Der Code, der im Fall eines oder mehrere Fehler ausgeführt wird, ist im Anhang in Abbildung \ref{fig:a13} zu finden.
+
+\section{Funktionstest}
+
+Bei einem funktionsorientierten Test wird ein Modul auf seine Spezifikationen geprüft. Exemplarisch wird hier das Timing Modul einem Black-Box-Funktionstest unterzogen. Das heißt, das die genaue Beschaffenheit des Moduls nicht betrachtet wird. Nur nach außen sichtbares Verhalten fließt in den Test ein.
+
+Die Spezifikation kann dem Abschnitt \ref{chap:timing} entommen werden.  Das Modul verfügt über folgende Eingänge:
+
+\begin{description}
+\item[Kommando] Gibt an, was das Modul tun soll. Der Datentyp ist eine Typdefinition mit einem Enum aus Strings(start und check).
+\item[Zielzeit] Gibt die Zeit in Sekunden deren Ablauf geprüft werden soll. Der Datentyp ist ein 32 Bit langes vorzeichenloses Long. Gültig sind Werte im Bereich von 0 bis 4.294.967.295.
+\item[Fehler] Enthält Fehler Informationen von vorangegangenen VIs. 
+\end{description}
+Die Ausgänge des Moduls sind:
+
+\begin{description}
+\item[Verstrichene Zeit] Gibt die Zeit an, die seit dem Start verstrichen ist. Der Datentyp ist ein 64 Bit Double.
+\item[Fertig] Ein Boolean der true zurück gibt wenn die Zielzeit abgelaufen ist und false wenn die Zeit noch läuft.
+\item[Fehler] Gibt Fehler aus, die im VI oder durch vorangegangene VIs entstanden sind.
+\end{description}
+
+Folgende Testfälle werden auf dem Modul ausgeführt. Als Testwerkzeug dient das Frontpanel des VIs und eine Stoppuhr.
+
+\begin{figure}[!ht]
+\centering
+
+\begin{tabular}{p{2cm}|p{5.2cm}|p{5.2cm}|p{2.5cm}}
+	 Zeit [s] & Eingabe Parameter & Erwartete Ausgabe & Test Resultat \\ 
+\hline 
+	0 & 
+	Kommando: start\newline Zielzeit: 5\newline kein Fehler & 
+	Fertig: false\newline Verstrichene Zeit: 0\newline kein Fehler &
+	erfolgreich \\ 
+\hline 
+	3 & 
+	Kommando: check\newline Zielzeit: 5\newline kein Fehler & 
+	Fertig: false\newline Verstrichene Zeit: 3\newline kein Fehler & 
+	erfolgreich \\ 
+\hline 
+	6 & 
+	Kommando: check\newline kein Fehler & 
+	Fertig: true\newline Verstrichene Zeit: 6\newline kein Fehler & 
+	erfolgreich \\ 
+\hline 
+	10 & 
+	Kommando: start\newline  Zielzeit: -3\newline kein Fehler & 
+	Fertig: false\newline Verstrichene Zeit = 0\newline Fehler: "negative Startzeit"' & 
+	erfolgreich \\ 
+\hline 
+	15 & 
+	Kommando: start\newline Zielzeit: 5\newline Fehler:"`Queue Daten Error"' & 
+	Fertig: false\newline Verstrichene Zeit: 0\newline Fehler: "`Queue Daten Error"' & 
+	erfolgreich \\
+\hline  
+	20 & 
+	Kommando: check\newline Zielzeit: 5\newline Fehler:"`Queue Daten Error"' & 
+	Fertig: false\newline Verstrichene Zeit: 0\newline Fehler: "`Queue Daten Error"' & 
+	erfolgreich \\ 
+\end{tabular} 
+
+\caption{Testfälle Timing Modul}
+\label{fig:test-time}
+\end{figure}
+Alle Testfälle konnten erfolgreich abgeschlossen werden. Somit ist der Funktionstest für das Timing Modul bestanden.
+
 
 
 \section{Stress- und Ladetest}		
@@ -481,7 +549,7 @@ Diese ist für die meisten Module kostenfrei.
 Auch bei strukturierter Programmierung können kleine Änderungen im Programmfluss  aufwendige Neustrukturierungen nach sich ziehen. 
 Ärgerlich ist es, beim Schaffen vom Raum im Blockdiagramm immer wieder Drähte und Symbole neu ordnen zu müssen.
 
-Abschließend lässt sich sagen, das LabVIEW trotz der beschriebenen Nachteile eine adäquat Lösung bietet, Programme schnell und effizient zu entwickeln. %  gutes Aufwand/Nutzen Verhältnis
+Abschließend lässt sich sagen, das LabVIEW trotz der beschriebenen Nachteile eine adäquate Lösung bietet, Programme schnell und effizient zu entwickeln. %  gutes Aufwand/Nutzen Verhältnis
 
 
 	

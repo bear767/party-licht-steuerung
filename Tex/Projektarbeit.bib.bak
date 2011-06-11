@@ -11,6 +11,27 @@
   timestamp = {2010.11.13}
 }
 
+@MISC{lattner,
+  author = {Chris Lattner},
+  title = {Low Level Virtual Machine},
+  howpublished = {\url{http://www.opel.samochodziki.info/de/Clang.html}},
+  year = {2011},
+  note = {Zugriff am 11.6.2011 um 15:14 in Datei \textit{"`Lattner-llvm.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.06.11}
+}
+
+@MISC{llvm,
+  author = {Chris Lattner},
+  title = {LLVM Language Reference Manual},
+  howpublished = {\url{http://llvm.org/docs/LangRef.html}},
+  year = {2011},
+  note = {Zugriff am 11.6.2011 um 15:03 in Datei \textit{"`LLVM Assembly Language
+	Reference Manual.pdf"'}},
+  owner = {Hua},
+  timestamp = {2011.06.11}
+}
+
 @MISC{ni-compiler,
   author = {NI},
   title = {Wie funktioniert der Compiler von NI LabVIEW?},
