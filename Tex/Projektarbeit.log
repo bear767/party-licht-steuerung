@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  11 JUN 2011 17:18
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2010.12.6)  14 JUN 2011 18:11
 entering extended mode
 **Projektarbeit.tex
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Projektarbeit.tex
@@ -935,7 +935,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [14 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/record.png (PNG 
 copy)>] [15 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuerung/Tex/Pics/timing.p
 ng>] [16] [17]
-Overfull \hbox (2.47537pt too wide) in paragraph at lines 399--432
+Overfull \hbox (2.47537pt too wide) in paragraph at lines 404--437
  [][] 
  []
 
@@ -1049,7 +1049,7 @@ File: Pics/PLS-Main-all.png Graphic file (type png)
 <use Pics/PLS-Main-all.png>) [32 <D:/DHBW_Sem6/Studienarbeit/party-licht-steuer
 ung/Tex/Pics/PLS-Main-all.png (PNG copy)>]
 (D:\DHBW_Sem6\Studienarbeit\party-licht-steuerung\Tex\Erklaerung.tex
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
@@ -1080,7 +1080,7 @@ Here is how much of TeX's memory you used:
  12787 multiletter control sequences out of 15000+200000
  42467 words of font info for 62 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 31i,12n,43p,629b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,12n,43p,464b,613s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Hua\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
 tt1200.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
@@ -1089,7 +1089,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Projektarbeit.pdf (40 pages, 901804 bytes).
+Output written on Projektarbeit.pdf (40 pages, 902233 bytes).
 PDF statistics:
  744 PDF objects out of 1000 (max. 8388607)
  135 named destinations out of 1000 (max. 500000)

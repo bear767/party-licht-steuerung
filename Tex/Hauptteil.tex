@@ -172,7 +172,11 @@ Eine externe Entität ist das Licht-Kontroll-System. Die Pfeile zeigen die Richt
 \label{chap:impl}
 		\subsection{Auswahl des Design Patterns} %6-3
 		\label{chap:designpattern} %4-18
-Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher - Entwurfsmuster (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden. Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und dem auszuführenden Code gut trennen. Des Weiteren ist es möglich die verschiedenen Schleifen parallel auszuführen, durch hinzufügen weiterer Schleifen bleibt das Programm gut skalierbar. Ein anderer Grund für die Verwendung dieses Design Patterns ist die interne Kommunikation über Queues, das erleichtert das steuern des User-Interfaces.
+Bei der Wahl des Entwurfsmusters habe ich mich für das Erzeuger/Verbraucher - Entwurfsmuster (siehe Abschnitt \ref{chap:entwurfsmuster}) entschieden. 
+Bei diesem Pattern kann man die Ereignisbehandlung vom User-Interface und dem auszuführenden Code gut trennen. 
+Des Weiteren ist es möglich, die verschiedenen Schleifen parallel auszuführen.
+Durch Hinzufügen weiterer Schleifen bleibt das Programm gut skalierbar. 
+Ein anderer Grund für die Verwendung dieses Design Patterns ist die interne Kommunikation über Queues, das erleichtert das Steuern des User-Interfaces.
 
 Das Entwurfsmuster wird wie folgt abgewandelt implementiert.  Die Erzeugerschleife reagiert auf Events vom User-Interface. 
 Hauptbestandteile des User-Interfaces  sind die drei Schaltflächen: Abspielen, Aufnehmen und Stoppen sowie die Menüauswahl: Speichern, Laden und Beenden.
@@ -200,7 +204,8 @@ Die Displayschleife hat die Aufgabe, Änderungen am User-Interface durchzuführe
 \end{itemize}
 
 Abbildung \ref{fig:schleifen} zeigt die Struktur aus dem Blockdiagramm. 
-Die Funktionen der Applikation sind in drei separate Schleifen aufgeteilt. Der Vorteil dieser Architektur ist, das die Funktionalität der einzelnen Prozesse parallel ausgeführt werden kann. 
+Die Funktionen der Applikation sind in drei separate Schleifen aufgeteilt. Der Vorteil dieser Architektur ist, 
+dass die drei Schleifen parallel ausgeführt werden können. 
 Des Weiteren ist diese Art der Architektur wartungsfreundlich und gut skalierbar. 
 
 %Auf die Implementierung der einzelnen Funktionen wird in den folgenden Abschnitten eingegangen.
@@ -497,13 +502,16 @@ Die Mindestvoraussetzungen für die Windows-Laufzeitumgebung sind \cite{ni-min}:
 % Schau mal nochmal  in LabView nach, was für ein Interface/Protokoll benutzt/erstellt wird (SOA, Axis??, RPC??) und was den Client und was den Server-Teil bildet 
 % und was, wo zu installieren ist und wie der Webservice angesprochen wird vom Client
 
-Mit LabVIEW lässt sich ein Webservice erstellen auf den der Anwender via Inter- oder Intranet mit einem Standard-Browser zugreifen kann. 
+Mit LabVIEW lässt sich ein Webservice erstellen, auf den der Anwender via Inter- oder Intranet mit einem Standard-Browser zugreifen kann. 
 Rechenintensive Anwendungen können von einem Server  bearbeitet werden und müssen nicht die Rechnerressourcen des Clients beanspruchen. 
 Mit einem Webservice lassen sich Prozesse von der Ferne aus überwachen. Anwendungen hierfür sind zum Beispiel die Produktionsüberwachung und Produktionssteuerung von Maschinen. Mitarbeiter müssen nicht von Maschinenterminal zu Maschinenterminal laufen sondern könnten zum Beispiel von einem Heimarbeitsplatz via Internet eine ganze Produktionsanlage überwachen.
 
-VIs können von jedem HTTP-fähigen Web-Client unter Angabe einer URL aus aufgerufen werden. Der Austausch von Daten kann dann mit herkömmlichen HTTP-Methoden wie POST erfolgen. 
+VIs können von jedem HTTP-fähigen Web-Client aus unter Angabe einer URL  aufgerufen werden. 
+Der Austausch von Daten kann dann mit herkömmlichen HTTP-Methoden wie POST erfolgen. 
 
-Web-Clients tauschen Daten mit einer Webdienstapplikation aus, indem Sie HTTP-Anfragen an definierte URLs senden. Der Webdienst akzeptiert die Anfrage und sendet Daten im XML-, HTML-, JSON- oder TXT-Format zurück an den Web-Client. Ein Web-Client kann beispielsweise eine Anfrage mit zwei Werten an einen Webdienst senden, der dann die Summe aus diesen Werten bildet und das Ergebnis an den Client sendet. \cite{LabViewHilfe}
+Web-Clients tauschen Daten mit einer Webdienstapplikation aus, indem sie HTTP-Anfragen an definierte URLs senden. 
+Der Webdienst akzeptiert die Anfrage und sendet Daten im XML-, HTML-, JSON- oder TXT-Format zurück an den Web-Client. 
+Ein Web-Client kann beispielsweise eine Anfrage mit zwei Werten an einen Webdienst senden, der dann die Summe aus diesen Werten bildet und das Ergebnis an den Client sendet. \cite{LabViewHilfe}
 
 
 
@@ -525,7 +533,7 @@ Hierfür stehen verschiedene Möglichkeiten zur Verfügung.
 Zum Beispiel Semaphore oder Warteschlangen. 
 % cbcb: Semaphore und Wartescchlange musst du auch erklären
 
-Die Umsetzung es Projekts über das Front Panel von LabVIEW hat gezeigt, dass es eine bequeme Möglichkeit bietet, schnell eine einfache und  gute Bedienoberflächen zu erstellen.
+Die Umsetzung des Projekts über das Front Panel von LabVIEW hat gezeigt, dass es eine bequeme Möglichkeit bietet, schnell eine einfache und  gute Bedienoberflächen zu erstellen.
 
 % Im Blockdiagramm ist durch die graphische Darstellung des Programmablaufs die Lesbarkeit deutlich einfacher
 % cbcb einfacher als was? einfacher Deshalb besser:
@@ -534,10 +542,11 @@ Das Blockdiagramm ermöglicht durch die graphische Darstellung des Programmablau
 Anhand verschiedener Farben lassen sich die Datentypen und ihr Ursprung gut erkennen.
 
 Ein weiterer Vorteil, den LabVIEW bietet, ist die Unterstützung von Kommunikationsprotokollen wie TCP/IP. 
-Es ist somit möglich auch  entfernte Anwendungen zu steuern und nutzen.
+Es ist somit möglich auch  entfernte Anwendungen zu steuern und zu nutzen.
 
 Bei der Entwicklung von LabVIEW Programmen gibt es auch Nachteile.
-So ist man an die originale LabVIEW-Entwicklungsumgebung von National Instruments gebunden. Für diese fallen Lizenze-Kosten an. Die "`NI Developer Suite Core"' für Windows kostet 5.800 Euro.
+So ist man an die originale LabVIEW-Entwicklungsumgebung von National Instruments gebunden. 
+Für diese fallen Lizenze-Kosten an. Die "`NI Developer Suite Core"' für Windows kostet 5.800 Euro.
 Hier gibt es auch kostenlose Versionen mit vermindertem Funktionsumfang für Studenten. \cite{ni-kost}
 %http://ohm.ni.com/advisors/devsuite/pages/cds/newcustomer.xhtml
 
@@ -576,7 +585,8 @@ Es hat 32 Analogausgänge, damit könnte man  Farbe und Intensität von 16 Lampe
 \subsubsection{Multilingualität}
 Um die Applikation einer größeren Zahl an Anwendern zur Verfügung zu stellen, kann eine Mehrsprachigkeit implementiert werden. 
 Dazu kann der Nutzer beim Start der Anwendung  nach seiner präferierten Sprache gefragt werden. Über eine Tabelle mit den zur Verfügung stehenden Sprachen kann
-ein Auswahl für die Beschriftung der Front Panel Elemente getroffen werden.
+eine Auswahl für die Beschriftung der Front Panel Elemente getroffen werden.
+
 
 
 
